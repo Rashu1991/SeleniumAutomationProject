@@ -35,7 +35,9 @@ public class HomePage extends TestBase {
 
 	@FindBy(xpath = "//div/ul[@class='RlwYhr undefined']/child::li/a/div[text()='Logout']")
 	WebElement logOutBtn;
-
+	@FindBy(xpath="//div/ul[@class='RlwYhr undefined']/child::li/a/div[text()='My Profile']")
+	WebElement myProfileLnk;
+	
 	@FindBy(tagName = "a")
 	List<WebElement> links;
 	@FindBy(xpath="//div[@class='_3zdbog _3Ed3Ub']/ul/child::li")
@@ -67,7 +69,7 @@ public class HomePage extends TestBase {
 		}
 	}
 
-	public void doGetMenuBarList(int index) throws InterruptedException {
+	public void doGetMenuBarList(int index) {
 		
 		Actions action = new Actions(driver);
 		action.moveToElement(menuBarList.get(index)).build().perform();
@@ -132,5 +134,13 @@ public class HomePage extends TestBase {
 	public OffersPage verifyOfferZoneSubMenu() {
 		offerZoneLnk.click();
 		return new OffersPage();
+	}
+	
+	public MyProfilePage clickOnMyAccounts_MyProfile() {
+		Actions action = new Actions(driver);
+		action.moveToElement(myProfileLnk).build().perform();
+		myProfileLnk.click();
+		return new MyProfilePage();
+		
 	}
 }

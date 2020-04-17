@@ -6,8 +6,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.log4testng.Logger;
 
+import com.qa.flipkart.pages.GroceryPage;
 import com.qa.flipkart.pages.HomePage;
 import com.qa.flipkart.pages.LoginPage;
+import com.qa.flipkart.pages.OffersPage;
 import com.qa.flipkart.testbase.TestBase;
 import com.qa.flipkart.testiutil.TestUtil;
 
@@ -28,6 +30,8 @@ public class HomePageTest extends TestBase {
 
 	HomePage homePage;
 	LoginPage loginPage;
+	GroceryPage groceryPage;
+	OffersPage offersPage;
 	
 	
 			
@@ -75,10 +79,9 @@ public class HomePageTest extends TestBase {
 
 	
 	  @Test
-	  public void doLogout() throws InterruptedException {
+	  public void doLogout(){
 	  homePage=loginPage.login(prop.getProperty("username"),prop.getProperty("password"));
 	  //Thread.sleep(Constants.STATIC_TIMEOUT);
-	  Assert.assertEquals(false, true);
 	  TestUtil.waitForPageLoad(driver);
 	  homePage.doGetMenuBarList(0);
 	  homePage.logout();
@@ -104,15 +107,17 @@ public class HomePageTest extends TestBase {
 	 }
 
 	 @Test
-	 public void goToGroceryPageTest() {
+	 public GroceryPage goToGroceryPageTest() {
 		 homePage=loginPage.login(prop.getProperty("username"),prop.getProperty("password"));
 		 homePage.verifyGroferSubMenu();
+		 return new GroceryPage();
 	 }
 	 
 	 @Test
-	 public void goToOffersPageTest() {
+	 public OffersPage goToOffersPageTest() {
 		 homePage=loginPage.login(prop.getProperty("username"),prop.getProperty("password"));
 		 homePage.verifyOfferZoneSubMenu();
+		 return new OffersPage();
 	 }
 	@AfterMethod
 	public void tearDown() {

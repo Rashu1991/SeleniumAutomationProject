@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21060" started-at="2020-04-17T11:32:39Z" finished-at="2020-04-17T11:33:01Z">
+  <suite name="Suite" duration-ms="16599" started-at="2020-04-17T14:42:24Z" finished-at="2020-04-17T14:42:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21060" started-at="2020-04-17T11:32:39Z" finished-at="2020-04-17T11:33:01Z">
-      <class name="com.qa.flipkart.tests.LoginPageTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.qa.flipkart.tests.LoginPageTest@72b6cbcc]" name="init" is-config="true" duration-ms="18094" started-at="2020-04-17T11:32:40Z" finished-at="2020-04-17T11:32:58Z">
+    <test name="Smoke Tests" duration-ms="16599" started-at="2020-04-17T14:42:24Z" finished-at="2020-04-17T14:42:41Z">
+      <class name="com.qa.flipkart.tests.MyProfilePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests.MyProfilePageTest@5db45159]" name="setUp" is-config="true" duration-ms="9885" started-at="2020-04-17T14:42:25Z" finished-at="2020-04-17T14:42:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.qa.flipkart.tests.LoginPageTest@72b6cbcc]" name="login" duration-ms="1666" started-at="2020-04-17T11:32:58Z" finished-at="2020-04-17T11:32:59Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyMyProfilePageTitleTest()[pri:0, instance:com.qa.flipkart.tests.MyProfilePageTest@5db45159]" name="verifyMyProfilePageTitleTest" duration-ms="6361" started-at="2020-04-17T14:42:34Z" finished-at="2020-04-17T14:42:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDownAll()[pri:0, instance:com.qa.flipkart.tests.LoginPageTest@72b6cbcc]" name="tearDownAll" is-config="true" duration-ms="1170" started-at="2020-04-17T11:32:59Z" finished-at="2020-04-17T11:33:01Z">
+        </test-method> <!-- verifyMyProfilePageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.flipkart.tests.MyProfilePageTest@5db45159]" name="tearDown" is-config="true" duration-ms="285" started-at="2020-04-17T14:42:41Z" finished-at="2020-04-17T14:42:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownAll -->
-      </class> <!-- com.qa.flipkart.tests.LoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.flipkart.tests.MyProfilePageTest -->
+    </test> <!-- Smoke Tests -->
+  </suite> <!-- Suite -->
 </testng-results>

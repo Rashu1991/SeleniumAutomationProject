@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="9" failures="3" name="TestSuite" time="55.75" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
+    <property name="java.vm.version" value="25.201-b09"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Mudit\eclipse-workspace\POMAutomationPractice"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Mudit\eclipse-workspace\POMAutomationPractice"/>
+    <property name="java.runtime.version" value="1.8.0_201-b09"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Mudit\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Program Files\apache-maven-3.6.2\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_201\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\Java\jre1.8.0_201\bin;C:\Program Files\apache-maven-3.6.2\bin;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\Mudit\.dnx\bin;C:\Users\Mudit\AppData\Local\Microsoft\WindowsApps;C:\Users\Mudit\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Mudit\AppData\Roaming\npm;."/>
+    <property name="maven.conf" value="C:\Program Files\apache-maven-3.6.2\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Program Files\apache-maven-3.6.2\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\Mudit"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="Mudit"/>
+    <property name="java.class.path" value="C:\Program Files\apache-maven-3.6.2\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_201\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_201"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\apache-maven-3.6.2\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.qa.flipkart.tests.HomePageTest" name="clickOnSearchBar" time="11.814">
+    <failure message="element click intercepted: Element &lt;button class=&quot;vh79eN&quot; type=&quot;submit&quot;&gt;...&lt;/button&gt; is not clickable at point (815, 28). Other element would receive the click: &lt;div class=&quot;_2ISNhP _3AOFWO&quot; tabindex=&quot;-1&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=80.0.3987.163)
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;DESKTOP-OFC8VFN&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49261}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2214fbf451f61cbe61cc2cb9b1046e91" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;vh79eN&quot; type=&quot;submit&quot;&gt;...&lt;/button&gt; is not clickable at point (815, 28). Other element would receive the click: &lt;div class=&quot;_2ISNhP _3AOFWO&quot; tabindex=&quot;-1&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=80.0.3987.163)
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;DESKTOP-OFC8VFN&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49261}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2214fbf451f61cbe61cc2cb9b1046e91
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:308)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:405)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:418)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy6.click(Unknown Source)
+	at com.qa.flipkart.pages.HomePage.doSearchBar(HomePage.java:57)
+	at com.qa.flipkart.tests.HomePageTest.clickOnSearchBar(HomePageTest.java:65)
+</failure>
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@2f333739
+Before navigating to: &apos;https://www.flipkart.com/&apos;
+Navigated to:&apos;https://www.flipkart.com/&apos;
+Trying to find Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;text&apos;]
+Found Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;text&apos;]
+Trying to find Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;password&apos;]
+Found Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;password&apos;]
+Trying to find Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]
+Found Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (2214fbf451f61cbe61cc2cb9b1046e91)] -&gt; xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (2214fbf451f61cbe61cc2cb9b1046e91)] -&gt; xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]]
+Interval time Fri Apr 17 17:40:07 IST 2020
+Interval time Fri Apr 17 17:40:07 IST 2020
+Page is fully loaded
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.xpath: //button[@type=&apos;submit&apos;]
+Found Element By : By.xpath: //button[@type=&apos;submit&apos;]
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (2214fbf451f61cbe61cc2cb9b1046e91)] -&gt; xpath: //button[@type=&apos;submit&apos;]]
+Exception occured: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;vh79eN&quot; type=&quot;submit&quot;&gt;...&lt;/button&gt; is not clickable at point (815, 28). Other element would receive the click: &lt;div class=&quot;_2ISNhP _3AOFWO&quot; tabindex=&quot;-1&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=80.0.3987.163)
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;DESKTOP-OFC8VFN&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49261}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2214fbf451f61cbe61cc2cb9b1046e91
+</system-out>
+    <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Apr 17, 2020 5:39:34 PM java.util.prefs.WindowsPreferences &lt;init&gt;
+WARNING: Could not open/create prefs root node Software\JavaSoft\Prefs at root 0x80000002. Windows RegCreateKeyEx(...) returned error code 5.
+Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 21570
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Apr 17, 2020 5:39:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1587125387.071][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125387.376][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125387.497][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125387.604][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125387.725][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125387.868][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125388.012][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125388.215][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125388.346][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125389.452][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125389.674][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125391.846][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125392.301][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125392.443][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125392.556][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125392.665][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125392.785][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125392.894][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125393.006][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125393.135][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125393.253][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125393.358][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125393.498][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125394.187][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125394.720][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125395.607][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125396.670][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125397.190][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125397.511][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125403.265][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125403.838][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125403.956][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125404.140][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125404.251][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125404.355][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125404.540][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125405.624][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125405.916][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125406.774][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125406.905][SEVERE]: Timed out receiving message from renderer: 0.100
+</system-err>
+  </testcase>
+  <testcase classname="com.qa.flipkart.tests.HomePageTest" name="doLogout" time="3.116">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:568)
+	at org.testng.Assert.assertEquals(Assert.java:578)
+	at com.qa.flipkart.tests.HomePageTest.doLogout(HomePageTest.java:81)
+</failure>
+    <system-out>close the browser
+Before navigating to: &apos;https://www.flipkart.com/&apos;
+Navigated to:&apos;https://www.flipkart.com/&apos;
+Trying to find Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;text&apos;]
+Found Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;text&apos;]
+Trying to find Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;password&apos;]
+04-17-2020 17:40:27 PoolingHttpClientConnectionManager.java DEBUG [Finalizer] conn.PoolingHttpClientConnectionManager 408 - Connection manager is shutting down
+04-17-2020 17:40:27 PoolingHttpClientConnectionManager.java DEBUG [Finalizer] conn.PoolingHttpClientConnectionManager 414 - Connection manager shut down
+Found Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;password&apos;]
+Trying to find Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]
+Found Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (1a6731c5d68bdcba07b33693c6471ab4)] -&gt; xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (1a6731c5d68bdcba07b33693c6471ab4)] -&gt; xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]]
+</system-out>
+    <system-err>Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 36879
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Apr 17, 2020 5:40:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1587125417.168][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125417.284][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125417.391][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125417.496][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125417.598][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125417.702][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125417.814][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125417.918][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125418.023][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125418.130][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125418.233][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125418.350][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125418.452][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125419.158][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125419.297][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125419.459][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125419.562][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125419.667][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125419.838][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125421.025][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125421.533][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125421.721][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125421.972][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125422.463][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125423.025][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125423.592][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125424.086][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125424.213][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125424.315][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125424.419][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125424.521][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125424.625][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125424.795][SEVERE]: Timed out receiving message from renderer: 0.100
+</system-err>
+  </testcase>
+  <testcase classname="com.qa.flipkart.tests.HomePageTest" name="getMenuBarList" time="9.131"/>
+  <testcase classname="com.qa.flipkart.tests.HomePageTest" name="goToGroceryPageTest" time="7.115"/>
+  <testcase classname="com.qa.flipkart.tests.HomePageTest" name="goToOffersPageTest" time="8.47">
+    <failure message="stale element reference: element is not attached to the page document
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;DESKTOP-OFC8VFN&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49543}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 261ce823a644ab89638879a7cf441c19" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;DESKTOP-OFC8VFN&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49543}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 261ce823a644ab89638879a7cf441c19
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:308)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:405)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:418)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy6.click(Unknown Source)
+	at com.qa.flipkart.pages.HomePage.verifyOfferZoneSubMenu(HomePage.java:133)
+	at com.qa.flipkart.tests.HomePageTest.goToOffersPageTest(HomePageTest.java:115)
+</failure>
+    <system-out>close the browser
+Before navigating to: &apos;https://www.flipkart.com/&apos;
+Navigated to:&apos;https://www.flipkart.com/&apos;
+Trying to find Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;text&apos;]
+Found Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;text&apos;]
+Trying to find Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;password&apos;]
+Found Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;password&apos;]
+Trying to find Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]
+Found Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (261ce823a644ab89638879a7cf441c19)] -&gt; xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (261ce823a644ab89638879a7cf441c19)] -&gt; xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]]
+Trying to find Element By : By.xpath: //div[@class=&apos;_3zdbog _3Ed3Ub&apos;]/ul/child::li/a/span[text()=&apos;Offer Zone&apos;]
+Found Element By : By.xpath: //div[@class=&apos;_3zdbog _3Ed3Ub&apos;]/ul/child::li/a/span[text()=&apos;Offer Zone&apos;]
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (261ce823a644ab89638879a7cf441c19)] -&gt; xpath: //div[@class=&apos;_3zdbog _3Ed3Ub&apos;]/ul/child::li/a/span[text()=&apos;Offer Zone&apos;]]
+Exception occured: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;DESKTOP-OFC8VFN&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49543}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 261ce823a644ab89638879a7cf441c19
+04-17-2020 17:41:35 PoolingHttpClientConnectionManager.java DEBUG [Finalizer] conn.PoolingHttpClientConnectionManager 408 - Connection manager is shutting down
+04-17-2020 17:41:35 PoolingHttpClientConnectionManager.java DEBUG [Finalizer] conn.PoolingHttpClientConnectionManager 414 - Connection manager shut down
+</system-out>
+    <system-err>Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 21039
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Apr 17, 2020 5:41:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1587125481.419][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125481.526][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125481.631][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125481.737][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125481.840][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125481.982][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125483.570][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125485.468][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125486.066][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125486.770][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125487.586][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125488.222][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125492.826][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125493.397][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125493.532][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125493.970][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125494.169][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587125494.737][SEVERE]: Timed out receiving message from renderer: 0.100
+</system-err>
+  </testcase>
+  <testcase classname="com.qa.flipkart.tests.HomePageTest" name="verifyAppUrl" time="0.042"/>
+  <testcase classname="com.qa.flipkart.tests.HomePageTest" name="verifyHomePageTitle" time="1.128"/>
+  <testcase classname="com.qa.flipkart.tests.HomePageTest" name="verifySubMenuBarListTest" time="12.746"/>
+  <testcase classname="com.qa.flipkart.tests.LoginPageTest" name="login" time="2.188"/>
+</testsuite>

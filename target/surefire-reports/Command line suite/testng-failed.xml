@@ -5,25 +5,13 @@
     <classes>
       <class name="com.qa.flipkart.tests.HomePageTest">
         <methods>
-          <include name="goToGroceryPageTest"/>
           <include name="tearDown"/>
-          <include name="verifyHomePageTitle"/>
           <include name="setUp"/>
           <include name="clickOnSearchBar"/>
-          <include name="verifyAppUrl"/>
-          <include name="verifySubMenuBarListTest"/>
           <include name="doLogout"/>
-          <include name="getMenuBarList"/>
           <include name="goToOffersPageTest"/>
         </methods>
       </class> <!-- com.qa.flipkart.tests.HomePageTest -->
-      <class name="com.qa.flipkart.tests.LoginPageTest">
-        <methods>
-          <include name="tearDownAll"/>
-          <include name="login"/>
-          <include name="init"/>
-        </methods>
-      </class> <!-- com.qa.flipkart.tests.LoginPageTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->

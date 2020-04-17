@@ -7,14 +7,13 @@
   </listeners>
   <test thread-count="5" name="Smoke Tests(failed)">
     <classes>
-      <class name="com.qa.flipkart.tests.HomePageTest">
+      <class name="com.qa.flipkart.tests.MyProfilePageTest">
         <methods>
-          <include name="tearDown"/>
+          <include name="verifyMyProfilePageTitleTest"/>
           <include name="setUp"/>
-          <include name="clickOnSearchBar"/>
-          <include name="doLogout"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.flipkart.tests.HomePageTest -->
+      </class> <!-- com.qa.flipkart.tests.MyProfilePageTest -->
     </classes>
   </test> <!-- Smoke Tests(failed) -->
 </suite> <!-- Failed suite [Suite] -->
