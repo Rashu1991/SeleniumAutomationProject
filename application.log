@@ -1,0 +1,102 @@
+2020-04-17 14:55:57,665 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: standard
+2020-04-17 14:55:57,694 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2020-04-17 14:55:57,700 DEBUG [main] PoolingHttpClientConnectionManager:265 - Connection request: [route: {s}->https://raw.githubusercontent.com:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2020-04-17 14:55:57,737 DEBUG [main] PoolingHttpClientConnectionManager:309 - Connection leased: [id: 0][route: {s}->https://raw.githubusercontent.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2020-04-17 14:55:57,755 DEBUG [main] MainClientExec:235 - Opening connection {s}->https://raw.githubusercontent.com:443
+2020-04-17 14:55:57,808 DEBUG [main] DefaultHttpClientConnectionOperator:139 - Connecting to raw.githubusercontent.com/151.101.152.133:443
+2020-04-17 14:55:57,809 DEBUG [main] SSLConnectionSocketFactory:337 - Connecting socket to raw.githubusercontent.com/151.101.152.133:443 with timeout 0
+2020-04-17 14:55:57,991 DEBUG [main] SSLConnectionSocketFactory:390 - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2020-04-17 14:55:57,992 DEBUG [main] SSLConnectionSocketFactory:391 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256]
+2020-04-17 14:55:57,994 DEBUG [main] SSLConnectionSocketFactory:395 - Starting handshake
+2020-04-17 14:55:58,229 DEBUG [main] SSLConnectionSocketFactory:425 - Secure session established
+2020-04-17 14:55:58,230 DEBUG [main] SSLConnectionSocketFactory:426 -  negotiated protocol: TLSv1.2
+2020-04-17 14:55:58,231 DEBUG [main] SSLConnectionSocketFactory:427 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2020-04-17 14:55:58,235 DEBUG [main] SSLConnectionSocketFactory:435 -  peer principal: CN=www.github.com, O="GitHub, Inc.", L=San Francisco, ST=California, C=US
+2020-04-17 14:55:58,237 DEBUG [main] SSLConnectionSocketFactory:444 -  peer alternative names: [www.github.com, *.github.com, github.com, *.github.io, github.io, *.githubusercontent.com, githubusercontent.com]
+2020-04-17 14:55:58,238 DEBUG [main] SSLConnectionSocketFactory:448 -  issuer principal: CN=DigiCert SHA2 High Assurance Server CA, OU=www.digicert.com, O=DigiCert Inc, C=US
+2020-04-17 14:55:58,247 DEBUG [main] DefaultHttpClientConnectionOperator:146 - Connection established 192.168.1.7:35561<->151.101.152.133:443
+2020-04-17 14:55:58,250 DEBUG [main] DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 30000
+2020-04-17 14:55:58,252 DEBUG [main] MainClientExec:256 - Executing request GET /bonigarcia/webdrivermanager/master/src/main/resources/versions.properties HTTP/1.1
+2020-04-17 14:55:58,254 DEBUG [main] MainClientExec:261 - Target auth state: UNCHALLENGED
+2020-04-17 14:55:58,261 DEBUG [main] MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2020-04-17 14:55:58,269 DEBUG [main] headers:133 - http-outgoing-0 >> GET /bonigarcia/webdrivermanager/master/src/main/resources/versions.properties HTTP/1.1
+2020-04-17 14:55:58,271 DEBUG [main] headers:136 - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.6
+2020-04-17 14:55:58,273 DEBUG [main] headers:136 - http-outgoing-0 >> Connection: keep-alive
+2020-04-17 14:55:58,274 DEBUG [main] headers:136 - http-outgoing-0 >> Host: raw.githubusercontent.com
+2020-04-17 14:55:58,276 DEBUG [main] headers:136 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2020-04-17 14:55:58,280 DEBUG [main] wire:73 - http-outgoing-0 >> "GET /bonigarcia/webdrivermanager/master/src/main/resources/versions.properties HTTP/1.1[\r][\n]"
+2020-04-17 14:55:58,281 DEBUG [main] wire:73 - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6[\r][\n]"
+2020-04-17 14:55:58,286 DEBUG [main] wire:73 - http-outgoing-0 >> "Connection: keep-alive[\r][\n]"
+2020-04-17 14:55:58,287 DEBUG [main] wire:73 - http-outgoing-0 >> "Host: raw.githubusercontent.com[\r][\n]"
+2020-04-17 14:55:58,288 DEBUG [main] wire:73 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-04-17 14:55:58,289 DEBUG [main] wire:73 - http-outgoing-0 >> "[\r][\n]"
+2020-04-17 14:55:58,507 DEBUG [main] wire:73 - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2020-04-17 14:55:58,509 DEBUG [main] wire:73 - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2020-04-17 14:55:58,510 DEBUG [main] wire:73 - http-outgoing-0 << "Content-Length: 761[\r][\n]"
+2020-04-17 14:55:58,512 DEBUG [main] wire:73 - http-outgoing-0 << "Content-Type: text/plain; charset=utf-8[\r][\n]"
+2020-04-17 14:55:58,514 DEBUG [main] wire:73 - http-outgoing-0 << "Cache-Control: max-age=300[\r][\n]"
+2020-04-17 14:55:58,515 DEBUG [main] wire:73 - http-outgoing-0 << "Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox[\r][\n]"
+2020-04-17 14:55:58,520 DEBUG [main] wire:73 - http-outgoing-0 << "ETag: W/"5bc052549d03206c46d63f91693fb475d692dc48a41e45c19c1c327e6c317774"[\r][\n]"
+2020-04-17 14:55:58,523 DEBUG [main] wire:73 - http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+2020-04-17 14:55:58,526 DEBUG [main] wire:73 - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+2020-04-17 14:55:58,527 DEBUG [main] wire:73 - http-outgoing-0 << "X-Frame-Options: deny[\r][\n]"
+2020-04-17 14:55:58,529 DEBUG [main] wire:73 - http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+2020-04-17 14:55:58,533 DEBUG [main] wire:73 - http-outgoing-0 << "Via: 1.1 varnish (Varnish/6.0)[\r][\n]"
+2020-04-17 14:55:58,535 DEBUG [main] wire:73 - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2020-04-17 14:55:58,536 DEBUG [main] wire:73 - http-outgoing-0 << "X-GitHub-Request-Id: 9850:36A0:1C9334:1E0D6A:5E996A4E[\r][\n]"
+2020-04-17 14:55:58,537 DEBUG [main] wire:73 - http-outgoing-0 << "Accept-Ranges: bytes[\r][\n]"
+2020-04-17 14:55:58,538 DEBUG [main] wire:73 - http-outgoing-0 << "Date: Fri, 17 Apr 2020 09:26:00 GMT[\r][\n]"
+2020-04-17 14:55:58,539 DEBUG [main] wire:73 - http-outgoing-0 << "Via: 1.1 varnish[\r][\n]"
+2020-04-17 14:55:58,540 DEBUG [main] wire:73 - http-outgoing-0 << "X-Served-By: cache-bom18220-BOM[\r][\n]"
+2020-04-17 14:55:58,542 DEBUG [main] wire:73 - http-outgoing-0 << "X-Cache: HIT, HIT[\r][\n]"
+2020-04-17 14:55:58,542 DEBUG [main] wire:73 - http-outgoing-0 << "X-Cache-Hits: 10, 1[\r][\n]"
+2020-04-17 14:55:58,543 DEBUG [main] wire:73 - http-outgoing-0 << "X-Timer: S1587115560.178489,VS0,VE183[\r][\n]"
+2020-04-17 14:55:58,544 DEBUG [main] wire:73 - http-outgoing-0 << "Vary: Authorization,Accept-Encoding[\r][\n]"
+2020-04-17 14:55:58,545 DEBUG [main] wire:73 - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-04-17 14:55:58,546 DEBUG [main] wire:73 - http-outgoing-0 << "X-Fastly-Request-ID: c7e046b94ca01068fb66ae0ed52d7bb1707f0103[\r][\n]"
+2020-04-17 14:55:58,547 DEBUG [main] wire:73 - http-outgoing-0 << "Expires: Fri, 17 Apr 2020 09:31:00 GMT[\r][\n]"
+2020-04-17 14:55:58,548 DEBUG [main] wire:73 - http-outgoing-0 << "Source-Age: 41[\r][\n]"
+2020-04-17 14:55:58,549 DEBUG [main] wire:73 - http-outgoing-0 << "[\r][\n]"
+2020-04-17 14:55:58,560 DEBUG [main] headers:122 - http-outgoing-0 << HTTP/1.1 200 OK
+2020-04-17 14:55:58,562 DEBUG [main] headers:125 - http-outgoing-0 << Connection: keep-alive
+2020-04-17 14:55:58,563 DEBUG [main] headers:125 - http-outgoing-0 << Content-Length: 761
+2020-04-17 14:55:58,565 DEBUG [main] headers:125 - http-outgoing-0 << Content-Type: text/plain; charset=utf-8
+2020-04-17 14:55:58,565 DEBUG [main] headers:125 - http-outgoing-0 << Cache-Control: max-age=300
+2020-04-17 14:55:58,570 DEBUG [main] headers:125 - http-outgoing-0 << Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+2020-04-17 14:55:58,570 DEBUG [main] headers:125 - http-outgoing-0 << ETag: W/"5bc052549d03206c46d63f91693fb475d692dc48a41e45c19c1c327e6c317774"
+2020-04-17 14:55:58,571 DEBUG [main] headers:125 - http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+2020-04-17 14:55:58,572 DEBUG [main] headers:125 - http-outgoing-0 << X-Content-Type-Options: nosniff
+2020-04-17 14:55:58,573 DEBUG [main] headers:125 - http-outgoing-0 << X-Frame-Options: deny
+2020-04-17 14:55:58,573 DEBUG [main] headers:125 - http-outgoing-0 << X-XSS-Protection: 1; mode=block
+2020-04-17 14:55:58,574 DEBUG [main] headers:125 - http-outgoing-0 << Via: 1.1 varnish (Varnish/6.0)
+2020-04-17 14:55:58,575 DEBUG [main] headers:125 - http-outgoing-0 << Content-Encoding: gzip
+2020-04-17 14:55:58,575 DEBUG [main] headers:125 - http-outgoing-0 << X-GitHub-Request-Id: 9850:36A0:1C9334:1E0D6A:5E996A4E
+2020-04-17 14:55:58,577 DEBUG [main] headers:125 - http-outgoing-0 << Accept-Ranges: bytes
+2020-04-17 14:55:58,586 DEBUG [main] headers:125 - http-outgoing-0 << Date: Fri, 17 Apr 2020 09:26:00 GMT
+2020-04-17 14:55:58,587 DEBUG [main] headers:125 - http-outgoing-0 << Via: 1.1 varnish
+2020-04-17 14:55:58,589 DEBUG [main] headers:125 - http-outgoing-0 << X-Served-By: cache-bom18220-BOM
+2020-04-17 14:55:58,590 DEBUG [main] headers:125 - http-outgoing-0 << X-Cache: HIT, HIT
+2020-04-17 14:55:58,591 DEBUG [main] headers:125 - http-outgoing-0 << X-Cache-Hits: 10, 1
+2020-04-17 14:55:58,594 DEBUG [main] headers:125 - http-outgoing-0 << X-Timer: S1587115560.178489,VS0,VE183
+2020-04-17 14:55:58,597 DEBUG [main] headers:125 - http-outgoing-0 << Vary: Authorization,Accept-Encoding
+2020-04-17 14:55:58,598 DEBUG [main] headers:125 - http-outgoing-0 << Access-Control-Allow-Origin: *
+2020-04-17 14:55:58,600 DEBUG [main] headers:125 - http-outgoing-0 << X-Fastly-Request-ID: c7e046b94ca01068fb66ae0ed52d7bb1707f0103
+2020-04-17 14:55:58,602 DEBUG [main] headers:125 - http-outgoing-0 << Expires: Fri, 17 Apr 2020 09:31:00 GMT
+2020-04-17 14:55:58,613 DEBUG [main] headers:125 - http-outgoing-0 << Source-Age: 41
+2020-04-17 14:55:58,640 DEBUG [main] MainClientExec:285 - Connection can be kept alive indefinitely
+2020-04-17 14:55:58,670 DEBUG [main] wire:73 - http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8d][0x95][0xcb][0x8e][0xdb]0[0xc]E[0xf7][0xf9][\n]"
+2020-04-17 14:55:58,671 DEBUG [main] wire:73 - http-outgoing-0 << "[0x1][0xb3]i[0x17]#[[0xf]Kv[0x0]m[0xfa]\[\r][0xba]h[0xc0]I[0x94][0xc4][0x18]'[\n]"
+2020-04-17 14:55:58,672 DEBUG [main] wire:73 - http-outgoing-0 << "dg[0xd2][0xf6][0xeb]KQ[0x8f][0xf1][0x4]-[0xd0][0xe5]=&)B[0xd4][0xa5][0x1f][0xc8][0x8f][0xe3]0[0x91][0xfd]0Z[0xb2]u[0xe7][0xb9][0x1f][0xce][0x13][0x99][0x8f][0x96]<[0x9f][0xdd][0xed]L^[0xac][0x9f][0x6][0x7]h[0xef]<[0xd9][0xf9]!h[0xf2]n3[0x9c]{[0xff][0xeb]=$[0x9c].[0xfd]<l [0xf7]6[0xcc]G[0xcc][0xdb]:[0xef][0xed]tq[0xe7][0xdd]p>[0x90][0x8d]w[0xb7][0xc9][0xfa]\g[0xb5]z [0x1f]"Z[0x93][0xaf][0xce][0x1d] [0xf3][0xe3][0xd1][0xbb][0x93]%[0x8f][0xe4][0x13][0x96]_[0x93]-[0x82]x[0x18][0xc4]wW[0xbf][0xb5]kr[0x9c][0xe7][0xcb][0xba][0xaa][0x96]_)[0x8a][0xe1]z[0xa2][0xce][0x1f][0xaa][0x1d]4<[0xba]~7[0xad]bL[0xcb]L[0xcb]hMe-%U][0xa6][0xb5]ik[0xa0][0xa2]k5e[0xb5]JXwFw[0x88]eCE[0xa1][0xad][0xd1]-[0xd2]ZBp[0x93][0x83][0xb5][0xd1]:[0xe0]V5P>Se[0xb4]BZw[0x94][0xf1]R[0xa3]1[0xba][0x9]X[0xeb][0x9a][0xb2][0xd7]hi[0xb4]D[0xcc];Zb[0x85][0xd1]"@[0xd5][\n]"
+2020-04-17 14:55:58,674 DEBUG [main] wire:73 - http-outgoing-0 << "[0xaa][0xda]\[0x98][0x1b]Ne[0x89]aoT[0x1d]TnLuA[0xc9][0x94][0xa7][0xda][0xa0]xV:([0x96][0x95][\n]"
+2020-04-17 14:55:58,676 DEBUG [main] wire:73 - http-outgoing-0 << "*[0xb7][0xae][0x1a]P"[0x9f][0xa7]dP:G[0x8a][0xa0][0xf2][0xe9]*[0xf4]"[0xca]y[0xa1][0x17]Q[0xce][0xb][0xbd][0x8][0xf1]f[0xc8]O[0xee][0xf7]0[0x8e]=[0xf9]2x[0xbb]w?[0x17]c>[0xd8][0xed][0xb3][0xfb][0xeb][0x94]'[0x18][0xf3][0x1][0xde][0xd3]uC[0xe1][0x85]U[0xa7]X[0xa2]Z$T[0xde][0x8e][0xb6][0x9f][0xec][0xb4][0xda][0xc7][0xba]Z[0x98][0x9a]r[0xb8][0xfd][0x2][0xf8]=`[0xf7][0xa0][0xbe][0x3]pyok[0xc0][0xfd][0x1][0x80][0xd9][0xe5][0xa2]J[0x7][0x0]S+@[0xdd][0x83][0xe6][0x1e][0xc8][0x0]`[0xa6]%[0x5];][0x2][0xec][0x94]/"[0xb0]Sx[0xb9]%[0x5];][0x80][0x6];][0x2][0xec]t[0x9][0xb0][0xd3]%[0xc0]N[0xe1][0xe1][0xe7][0xa2][\r]v[0x1a][0xc0][0xd2][0x93][0xdf].[0xd6][0xf7][0x8b]![0xb9][0xa0][0xff]gH[0x18]8[0xb9][0xfd]|[0xeb][0xbd][0xad]Pes[0xc6][0xf4][0xd7][0x91][0xe1]G[0xb8][0xca][0xa5][\r][0xeb]U[0xa4]`[0xa1][0xe2]B[0xdd]%[0x8][0x6]*&lu[0x82]`[0x9f]bA[0xc6]s>[0xf8][0xe7][0xd5][0x82][0x82][0xa7]X[0xbe]t`[0x9d]c[0x93]s[0xf0]`[0xb8]Q[0xb4]Q[0x14][0xc9]7Q$[0xdb]D[0x91]\[0x13]E2M[0x14][0xc9]3Q$[0xcb]D[0x91][0x1c][0x13][0x5][0x1a]F[0xa4]s[0x92]_[0xf0][0x8b][0xc][0x1d][0xe4][0x8e]e[0xe8]@[0xa4]Fe[0xe8][0x80][0xa7][0xcb][0x90][0xa1][0x3][0x10][0xcb][0xa1]=[\r][[0xef][0xc2][0xdd][0x93][0xcf][0xbb][0xc3]r[0x93][0x9e]&[0xb][0xe0][0x9f][0xe3][0xdb][0xd9][0x17];[0x86][0xc3][0xe9])W@[0xc3][0xd9][0xf3][0xe3]u[0xaa][\n]"
+2020-04-17 14:55:58,677 DEBUG [main] wire:73 - http-outgoing-0 << "{[0xc]E[0xaa][0xd9][0xb9]q[0xaa]nv[0x93][0xc6][0xb9][\n]"
+2020-04-17 14:55:58,679 DEBUG [main] wire:73 - http-outgoing-0 << "[0xb4][0xe5][0xa6][0x85][0x97][0xb]7[0x7][0x1b]/[0x92][0xbc]t[0x99][\n]"
+2020-04-17 14:55:58,680 DEBUG [main] wire:73 - http-outgoing-0 << "[0xf7][0x89]Ay[0xe3]*F;$e[0xd9][0xb2][0xe0][0x3]$i[0xd1][0xf2]0[0xd4]H[0xd2][0x8e][0xe5][0xa2][0x90][0xb4]_[0x19][0xec][0xc6][0x14][0x93]V+[0x13][0x1d]<eL[0x93][0xd2]\[0xbc]}[0x84][0xbf][0xd8][0xdc][0x8f][0xa3][0xdd]E[0xc8][0x8d][0xa2]L3[0xd8]T[0x18][0xc3]LC[0x99][0xe2]][0xec]F[0xd6][0x6][0x96]{S+[0x81]_Ek[0x4][0xec]i[0xd1]E[0xc9][0xc3][0x94]a[0xf5][0xb7][\n]"
+2020-04-17 14:55:58,680 DEBUG [main] wire:87 - http-outgoing-0 << "[0xbf][0xf2][0xda]0[0x90][0x1c]V[0xe7][0x1f][0x1][0xdf]U[0xde];[0x7][0x0][0x0]"
+2020-04-17 14:55:58,689 DEBUG [main] PoolingHttpClientConnectionManager:341 - Connection [id: 0][route: {s}->https://raw.githubusercontent.com:443] can be kept alive indefinitely
+2020-04-17 14:55:58,690 DEBUG [main] DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+2020-04-17 14:55:58,691 DEBUG [main] PoolingHttpClientConnectionManager:348 - Connection released: [id: 0][route: {s}->https://raw.githubusercontent.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2020-04-17 14:56:49,788 DEBUG [Finalizer] PoolingHttpClientConnectionManager:408 - Connection manager is shutting down
+2020-04-17 14:56:49,811 DEBUG [Finalizer] PoolingHttpClientConnectionManager:414 - Connection manager shut down
+2020-04-17 14:59:16,726 DEBUG [Finalizer] PoolingHttpClientConnectionManager:408 - Connection manager is shutting down
+2020-04-17 14:59:16,733 DEBUG [Finalizer] PoolingHttpClientConnectionManager:414 - Connection manager shut down

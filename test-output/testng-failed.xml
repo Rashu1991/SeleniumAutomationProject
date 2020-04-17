@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.qa.flipkart.extentreportlistener.ExtentReportListener"/>
+    <listener class-name="com.qa.flipkart.retry.MyTransformer"/>
+  </listeners>
+  <test thread-count="5" name="FlipKart Smoke Tests(failed)">
+    <classes>
+      <class name="com.qa.flipkart.tests.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="clickOnSearchBar"/>
+          <include name="doLogout"/>
+          <include name="getMenuBarList"/>
+        </methods>
+      </class> <!-- com.qa.flipkart.tests.HomePageTest -->
+    </classes>
+  </test> <!-- FlipKart Smoke Tests(failed) -->
+</suite> <!-- Failed suite [Suite] -->
