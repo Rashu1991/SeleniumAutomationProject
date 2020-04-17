@@ -29,7 +29,7 @@ public class HomePageTest extends TestBase {
 	HomePage homePage;
 	LoginPage loginPage;
 	
-	Logger log = Logger.getLogger(HomePageTest.class);
+	
 			
 	public HomePageTest() {
 		super();

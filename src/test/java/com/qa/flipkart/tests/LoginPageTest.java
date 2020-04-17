@@ -14,7 +14,6 @@ public class LoginPageTest extends TestBase{
 	LoginPage loginPage;
 	HomePage homePage;
 	
-	Logger log =Logger.getLogger(LoginPageTest.class);
 	
 	
 	public LoginPageTest(){
@@ -23,7 +22,6 @@ public class LoginPageTest extends TestBase{
 
 	@BeforeMethod
 	public void init() {
-		log.info("****************************** Starting test cases execution  *****************************************");
 		TestBase.initialize(prop.getProperty("browser"));
 		TestBase.launchUrl();
 		loginPage = new LoginPage();
@@ -38,7 +36,6 @@ public class LoginPageTest extends TestBase{
 	@AfterMethod
 	public void tearDownAll() {
 		TestBase.quit();
-		log.info("****************************** Browser is closed *****************************************");
 	}	
 	
 }
