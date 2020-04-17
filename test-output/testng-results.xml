@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14244" started-at="2020-04-16T13:57:25Z" finished-at="2020-04-16T13:57:40Z">
+  <suite name="Default suite" duration-ms="21060" started-at="2020-04-17T11:32:39Z" finished-at="2020-04-17T11:33:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14244" started-at="2020-04-16T13:57:25Z" finished-at="2020-04-16T13:57:40Z">
+    <test name="Default test" duration-ms="21060" started-at="2020-04-17T11:32:39Z" finished-at="2020-04-17T11:33:01Z">
       <class name="com.qa.flipkart.tests.LoginPageTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.qa.flipkart.tests.LoginPageTest@3224f60b]" name="init" is-config="true" duration-ms="10926" started-at="2020-04-16T13:57:25Z" finished-at="2020-04-16T13:57:36Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.qa.flipkart.tests.LoginPageTest@72b6cbcc]" name="init" is-config="true" duration-ms="18094" started-at="2020-04-17T11:32:40Z" finished-at="2020-04-17T11:32:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.qa.flipkart.tests.LoginPageTest@3224f60b]" name="login" duration-ms="2165" started-at="2020-04-16T13:57:36Z" finished-at="2020-04-16T13:57:39Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.qa.flipkart.tests.LoginPageTest@72b6cbcc]" name="login" duration-ms="1666" started-at="2020-04-17T11:32:58Z" finished-at="2020-04-17T11:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDownAll()[pri:0, instance:com.qa.flipkart.tests.LoginPageTest@3224f60b]" name="tearDownAll" is-config="true" duration-ms="1099" started-at="2020-04-16T13:57:39Z" finished-at="2020-04-16T13:57:40Z">
+        <test-method status="PASS" signature="tearDownAll()[pri:0, instance:com.qa.flipkart.tests.LoginPageTest@72b6cbcc]" name="tearDownAll" is-config="true" duration-ms="1170" started-at="2020-04-17T11:32:59Z" finished-at="2020-04-17T11:33:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownAll -->

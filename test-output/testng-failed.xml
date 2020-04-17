@@ -5,7 +5,7 @@
     <listener class-name="com.qa.flipkart.extentreportlistener.ExtentReportListener"/>
     <listener class-name="com.qa.flipkart.retry.MyTransformer"/>
   </listeners>
-  <test thread-count="5" name="FlipKart Smoke Tests(failed)">
+  <test thread-count="5" name="Smoke Tests(failed)">
     <classes>
       <class name="com.qa.flipkart.tests.HomePageTest">
         <methods>
@@ -13,9 +13,8 @@
           <include name="setUp"/>
           <include name="clickOnSearchBar"/>
           <include name="doLogout"/>
-          <include name="getMenuBarList"/>
         </methods>
       </class> <!-- com.qa.flipkart.tests.HomePageTest -->
     </classes>
-  </test> <!-- FlipKart Smoke Tests(failed) -->
+  </test> <!-- Smoke Tests(failed) -->
 </suite> <!-- Failed suite [Suite] -->
