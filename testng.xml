@@ -7,10 +7,10 @@
 </listeners>
   <test  name="Smoke Tests">
     <classes>
-     <!--  <class name="com.qa.flipkart.tests.HomePageTest"/> -->
-     <!--  <class name="com.qa.flipkart.tests.LoginPageTest"/> -->
-      <!-- <class name = "com.qa.flipkart.tests.GroceryPageTest"/> -->
-      <class name="com.qa.flipkart.tests.OffersPageTest"/>
+    <!-- <class name="com.qa.flipkart.tests.HomePageTest"/>
+     <class name="com.qa.flipkart.tests.LoginPageTest"/>
+      <class name = "com.qa.flipkart.tests.GroceryPageTest"/>
+      <class name="com.qa.flipkart.tests.OffersPageTest"/> -->
       <class name ="com.qa.flipkart.tests.MyProfilePageTest"/>
     </classes>
   </test> <!-- Test -->

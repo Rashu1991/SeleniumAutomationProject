@@ -9,9 +9,10 @@
     <classes>
       <class name="com.qa.flipkart.tests.MyProfilePageTest">
         <methods>
-          <include name="verifyMyProfilePageTitleTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="selectRadioBtnTest_Female"/>
+          <include name="selectRadioBtnTest_Male"/>
         </methods>
       </class> <!-- com.qa.flipkart.tests.MyProfilePageTest -->
     </classes>

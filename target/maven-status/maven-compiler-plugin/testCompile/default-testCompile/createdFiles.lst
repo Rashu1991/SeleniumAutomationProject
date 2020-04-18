@@ -1,2 +1,5 @@
+com\qa\flipkart\tests\MyProfilePageTest.class
+com\qa\flipkart\tests\GroceryPageTest.class
 com\qa\flipkart\tests\LoginPageTest.class
 com\qa\flipkart\tests\HomePageTest.class
+com\qa\flipkart\tests\OffersPageTest.class

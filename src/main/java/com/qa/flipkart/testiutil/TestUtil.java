@@ -58,7 +58,7 @@ public class TestUtil extends TestBase {
 		File srcFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		String currentDirectory =System.getProperty("user.dir");
 		try {
-			FileUtils.copyFile(srcFile, new File(currentDirectory+"/screenshotsPage"+System.currentTimeMillis()+".png"));
+			FileUtils.copyFile(srcFile, new File(currentDirectory+"/screenshotsPage/"+System.currentTimeMillis()+".png"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -70,7 +70,7 @@ public class TestUtil extends TestBase {
 		File srcFile=ele.getScreenshotAs(OutputType.FILE);
 		String currDir = System.getProperty("user.dir");
 		try {
-			FileUtils.copyFile(srcFile, new File(currDir+"/screenshotsEle"+System.currentTimeMillis()+".png"));
+			FileUtils.copyFile(srcFile, new File(currDir+"/screenshotsEle/"+System.currentTimeMillis()+".png"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

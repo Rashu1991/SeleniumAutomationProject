@@ -3,13 +3,26 @@
 <suite verbose="0" name="Failed suite [Command line suite]">
   <test thread-count="5" verbose="0" name="Command line test(failed)">
     <classes>
+      <class name="com.qa.flipkart.tests.OffersPageTest">
+        <methods>
+          <include name="verifyOffersPageTitle"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.flipkart.tests.OffersPageTest -->
+      <class name="com.qa.flipkart.tests.GroceryPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyTitle"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.flipkart.tests.GroceryPageTest -->
       <class name="com.qa.flipkart.tests.HomePageTest">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="clickOnSearchBar"/>
           <include name="doLogout"/>
-          <include name="goToOffersPageTest"/>
         </methods>
       </class> <!-- com.qa.flipkart.tests.HomePageTest -->
     </classes>

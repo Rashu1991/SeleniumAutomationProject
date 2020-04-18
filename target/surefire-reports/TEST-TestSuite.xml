@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="9" failures="3" name="TestSuite" time="55.75" errors="0" skipped="0">
+<testsuite tests="10" failures="4" name="TestSuite" time="60.419" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
@@ -65,209 +65,22 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.qa.flipkart.tests.HomePageTest" name="clickOnSearchBar" time="11.814">
-    <failure message="element click intercepted: Element &lt;button class=&quot;vh79eN&quot; type=&quot;submit&quot;&gt;...&lt;/button&gt; is not clickable at point (815, 28). Other element would receive the click: &lt;div class=&quot;_2ISNhP _3AOFWO&quot; tabindex=&quot;-1&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=80.0.3987.163)
-Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
-System info: host: &apos;DESKTOP-OFC8VFN&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49261}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2214fbf451f61cbe61cc2cb9b1046e91" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;vh79eN&quot; type=&quot;submit&quot;&gt;...&lt;/button&gt; is not clickable at point (815, 28). Other element would receive the click: &lt;div class=&quot;_2ISNhP _3AOFWO&quot; tabindex=&quot;-1&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=80.0.3987.163)
-Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
-System info: host: &apos;DESKTOP-OFC8VFN&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49261}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2214fbf451f61cbe61cc2cb9b1046e91
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:308)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:405)
-	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:418)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy6.click(Unknown Source)
-	at com.qa.flipkart.pages.HomePage.doSearchBar(HomePage.java:57)
-	at com.qa.flipkart.tests.HomePageTest.clickOnSearchBar(HomePageTest.java:65)
-</failure>
-    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@2f333739
-Before navigating to: &apos;https://www.flipkart.com/&apos;
-Navigated to:&apos;https://www.flipkart.com/&apos;
-Trying to find Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;text&apos;]
-Found Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;text&apos;]
-Trying to find Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;password&apos;]
-Found Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;password&apos;]
-Trying to find Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]
-Found Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]
-Trying to click on: [[ChromeDriver: chrome on WINDOWS (2214fbf451f61cbe61cc2cb9b1046e91)] -&gt; xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]]
-Clicked on: [[ChromeDriver: chrome on WINDOWS (2214fbf451f61cbe61cc2cb9b1046e91)] -&gt; xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]]
-Interval time Fri Apr 17 17:40:07 IST 2020
-Interval time Fri Apr 17 17:40:07 IST 2020
-Page is fully loaded
-Trying to find Element By : By.name: q
-Found Element By : By.name: q
-Trying to find Element By : By.xpath: //button[@type=&apos;submit&apos;]
-Found Element By : By.xpath: //button[@type=&apos;submit&apos;]
-Trying to click on: [[ChromeDriver: chrome on WINDOWS (2214fbf451f61cbe61cc2cb9b1046e91)] -&gt; xpath: //button[@type=&apos;submit&apos;]]
-Exception occured: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;vh79eN&quot; type=&quot;submit&quot;&gt;...&lt;/button&gt; is not clickable at point (815, 28). Other element would receive the click: &lt;div class=&quot;_2ISNhP _3AOFWO&quot; tabindex=&quot;-1&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=80.0.3987.163)
-Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
-System info: host: &apos;DESKTOP-OFC8VFN&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49261}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2214fbf451f61cbe61cc2cb9b1046e91
-</system-out>
-    <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Apr 17, 2020 5:39:34 PM java.util.prefs.WindowsPreferences &lt;init&gt;
-WARNING: Could not open/create prefs root node Software\JavaSoft\Prefs at root 0x80000002. Windows RegCreateKeyEx(...) returned error code 5.
-Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 21570
-Only local connections are allowed.
-Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-Apr 17, 2020 5:39:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-[1587125387.071][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125387.376][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125387.497][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125387.604][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125387.725][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125387.868][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125388.012][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125388.215][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125388.346][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125389.452][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125389.674][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125391.846][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125392.301][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125392.443][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125392.556][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125392.665][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125392.785][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125392.894][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125393.006][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125393.135][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125393.253][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125393.358][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125393.498][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125394.187][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125394.720][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125395.607][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125396.670][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125397.190][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125397.511][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125403.265][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125403.838][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125403.956][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125404.140][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125404.251][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125404.355][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125404.540][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125405.624][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125405.916][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125406.774][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125406.905][SEVERE]: Timed out receiving message from renderer: 0.100
-</system-err>
-  </testcase>
-  <testcase classname="com.qa.flipkart.tests.HomePageTest" name="doLogout" time="3.116">
-    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:568)
-	at org.testng.Assert.assertEquals(Assert.java:578)
-	at com.qa.flipkart.tests.HomePageTest.doLogout(HomePageTest.java:81)
-</failure>
-    <system-out>close the browser
-Before navigating to: &apos;https://www.flipkart.com/&apos;
-Navigated to:&apos;https://www.flipkart.com/&apos;
-Trying to find Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;text&apos;]
-Found Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;text&apos;]
-Trying to find Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;password&apos;]
-04-17-2020 17:40:27 PoolingHttpClientConnectionManager.java DEBUG [Finalizer] conn.PoolingHttpClientConnectionManager 408 - Connection manager is shutting down
-04-17-2020 17:40:27 PoolingHttpClientConnectionManager.java DEBUG [Finalizer] conn.PoolingHttpClientConnectionManager 414 - Connection manager shut down
-Found Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;password&apos;]
-Trying to find Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]
-Found Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]
-Trying to click on: [[ChromeDriver: chrome on WINDOWS (1a6731c5d68bdcba07b33693c6471ab4)] -&gt; xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]]
-Clicked on: [[ChromeDriver: chrome on WINDOWS (1a6731c5d68bdcba07b33693c6471ab4)] -&gt; xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]]
-</system-out>
-    <system-err>Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 36879
-Only local connections are allowed.
-Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-Apr 17, 2020 5:40:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-[1587125417.168][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125417.284][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125417.391][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125417.496][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125417.598][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125417.702][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125417.814][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125417.918][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125418.023][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125418.130][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125418.233][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125418.350][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125418.452][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125419.158][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125419.297][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125419.459][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125419.562][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125419.667][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125419.838][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125421.025][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125421.533][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125421.721][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125421.972][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125422.463][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125423.025][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125423.592][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125424.086][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125424.213][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125424.315][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125424.419][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125424.521][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125424.625][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125424.795][SEVERE]: Timed out receiving message from renderer: 0.100
-</system-err>
-  </testcase>
-  <testcase classname="com.qa.flipkart.tests.HomePageTest" name="getMenuBarList" time="9.131"/>
-  <testcase classname="com.qa.flipkart.tests.HomePageTest" name="goToGroceryPageTest" time="7.115"/>
-  <testcase classname="com.qa.flipkart.tests.HomePageTest" name="goToOffersPageTest" time="8.47">
+  <testcase classname="com.qa.flipkart.tests.GroceryPageTest" name="verifyTitle" time="4.547">
     <failure message="stale element reference: element is not attached to the page document
   (Session info: chrome=80.0.3987.163)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
 System info: host: &apos;DESKTOP-OFC8VFN&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49543}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 261ce823a644ab89638879a7cf441c19" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55153}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dece2adc7b6dbd8c4b5ca1698f7820f8" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=80.0.3987.163)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
 System info: host: &apos;DESKTOP-OFC8VFN&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49543}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 261ce823a644ab89638879a7cf441c19
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55153}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dece2adc7b6dbd8c4b5ca1698f7820f8
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -292,9 +105,101 @@ Session ID: 261ce823a644ab89638879a7cf441c19
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy6.click(Unknown Source)
-	at com.qa.flipkart.pages.HomePage.verifyOfferZoneSubMenu(HomePage.java:133)
-	at com.qa.flipkart.tests.HomePageTest.goToOffersPageTest(HomePageTest.java:115)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.qa.flipkart.pages.HomePage.verifyGroferSubMenu(HomePage.java:129)
+	at com.qa.flipkart.tests.GroceryPageTest.verifyTitle(GroceryPageTest.java:37)
+</failure>
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@4cc77c2e
+Before navigating to: &apos;https://www.flipkart.com/&apos;
+Navigated to:&apos;https://www.flipkart.com/&apos;
+Trying to find Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;text&apos;]
+Found Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;text&apos;]
+Trying to find Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;password&apos;]
+Found Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;password&apos;]
+Trying to find Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]
+Found Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (dece2adc7b6dbd8c4b5ca1698f7820f8)] -&gt; xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (dece2adc7b6dbd8c4b5ca1698f7820f8)] -&gt; xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]]
+Interval time Fri Apr 17 20:21:41 IST 2020
+Interval time Fri Apr 17 20:21:41 IST 2020
+Page is fully loaded
+Trying to find Element By : By.xpath: //div[@class=&apos;_3zdbog _3Ed3Ub&apos;]/ul/child::li/a/span[text()=&apos;Grocery&apos;]
+Found Element By : By.xpath: //div[@class=&apos;_3zdbog _3Ed3Ub&apos;]/ul/child::li/a/span[text()=&apos;Grocery&apos;]
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (dece2adc7b6dbd8c4b5ca1698f7820f8)] -&gt; xpath: //div[@class=&apos;_3zdbog _3Ed3Ub&apos;]/ul/child::li/a/span[text()=&apos;Grocery&apos;]]
+Exception occured: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;DESKTOP-OFC8VFN&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55153}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dece2adc7b6dbd8c4b5ca1698f7820f8
+</system-out>
+    <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Apr 17, 2020 8:21:28 PM java.util.prefs.WindowsPreferences &lt;init&gt;
+WARNING: Could not open/create prefs root node Software\JavaSoft\Prefs at root 0x80000002. Windows RegCreateKeyEx(...) returned error code 5.
+Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 11592
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Apr 17, 2020 8:21:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1587135097.160][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135097.265][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135098.559][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135098.684][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135099.117][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135099.362][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135099.846][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135100.025][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135102.809][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135102.912][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135103.200][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135103.484][SEVERE]: Timed out receiving message from renderer: 0.100
+</system-err>
+  </testcase>
+  <testcase classname="com.qa.flipkart.tests.HomePageTest" name="clickOnSearchBar" time="5.746">
+    <failure message="element click intercepted: Element &lt;button class=&quot;vh79eN&quot; type=&quot;submit&quot;&gt;...&lt;/button&gt; is not clickable at point (815, 28). Other element would receive the click: &lt;div class=&quot;_2ISNhP _3AOFWO&quot; tabindex=&quot;-1&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=80.0.3987.163)
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;DESKTOP-OFC8VFN&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55225}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: aa1b631f6d31ba01686683211c71f1cd" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;vh79eN&quot; type=&quot;submit&quot;&gt;...&lt;/button&gt; is not clickable at point (815, 28). Other element would receive the click: &lt;div class=&quot;_2ISNhP _3AOFWO&quot; tabindex=&quot;-1&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=80.0.3987.163)
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;DESKTOP-OFC8VFN&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55225}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: aa1b631f6d31ba01686683211c71f1cd
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:308)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:405)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:418)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.qa.flipkart.pages.HomePage.doSearchBar(HomePage.java:59)
+	at com.qa.flipkart.tests.HomePageTest.clickOnSearchBar(HomePageTest.java:69)
 </failure>
     <system-out>close the browser
 Before navigating to: &apos;https://www.flipkart.com/&apos;
@@ -305,49 +210,271 @@ Trying to find Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//followi
 Found Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;password&apos;]
 Trying to find Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]
 Found Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]
-Trying to click on: [[ChromeDriver: chrome on WINDOWS (261ce823a644ab89638879a7cf441c19)] -&gt; xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]]
-Clicked on: [[ChromeDriver: chrome on WINDOWS (261ce823a644ab89638879a7cf441c19)] -&gt; xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]]
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (aa1b631f6d31ba01686683211c71f1cd)] -&gt; xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (aa1b631f6d31ba01686683211c71f1cd)] -&gt; xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]]
+Interval time Fri Apr 17 20:21:58 IST 2020
+Interval time Fri Apr 17 20:21:58 IST 2020
+Page is fully loaded
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.xpath: //button[@type=&apos;submit&apos;]
+Found Element By : By.xpath: //button[@type=&apos;submit&apos;]
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (aa1b631f6d31ba01686683211c71f1cd)] -&gt; xpath: //button[@type=&apos;submit&apos;]]
+Exception occured: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;vh79eN&quot; type=&quot;submit&quot;&gt;...&lt;/button&gt; is not clickable at point (815, 28). Other element would receive the click: &lt;div class=&quot;_2ISNhP _3AOFWO&quot; tabindex=&quot;-1&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=80.0.3987.163)
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;DESKTOP-OFC8VFN&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55225}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: aa1b631f6d31ba01686683211c71f1cd
+</system-out>
+    <system-err>Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 20148
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Apr 17, 2020 8:21:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1587135111.684][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135113.235][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135113.616][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135114.239][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135114.732][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135117.026][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135117.129][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135117.845][SEVERE]: Timed out receiving message from renderer: 0.100
+</system-err>
+  </testcase>
+  <testcase classname="com.qa.flipkart.tests.HomePageTest" name="doLogout" time="25.958">
+    <failure message="java.lang.reflect.InvocationTargetException
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;DESKTOP-OFC8VFN&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: EventFiringWebDriver" type="org.openqa.selenium.json.JsonException">org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;DESKTOP-OFC8VFN&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:344)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$15(JsonOutput.java:147)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:275)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$21(JsonOutput.java:162)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:162)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:275)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:175)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:170)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:275)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:266)
+	at org.openqa.selenium.json.Json.toJson(Json.java:40)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:233)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:122)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:646)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:106)
+	at com.sun.proxy.$Proxy5.perform(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.perform(EventFiringWebDriver.java:361)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
+	at com.qa.flipkart.pages.HomePage.logout(HomePage.java:80)
+	at com.qa.flipkart.tests.HomePageTest.doLogout(HomePageTest.java:87)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:340)
+	... 72 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div/ul[@class=&apos;RlwYhr undefined&apos;]/child::li/a/div[text()=&apos;Logout&apos;]&quot;}
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;DESKTOP-OFC8VFN&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55284}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 08314e2a3e6e6356424966b48b8d07e1
+*** Element info: {Using=xpath, value=//div/ul[@class=&apos;RlwYhr undefined&apos;]/child::li/a/div[text()=&apos;Logout&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:106)
+	at com.sun.proxy.$Proxy5.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:195)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy9.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:73)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:82)
+	... 77 more
+</failure>
+    <system-out>close the browser
+04-17-2020 20:22:00 PoolingHttpClientConnectionManager.java DEBUG [Finalizer] conn.PoolingHttpClientConnectionManager 408 - Connection manager is shutting down
+04-17-2020 20:22:00 PoolingHttpClientConnectionManager.java DEBUG [Finalizer] conn.PoolingHttpClientConnectionManager 414 - Connection manager shut down
+Before navigating to: &apos;https://www.flipkart.com/&apos;
+Navigated to:&apos;https://www.flipkart.com/&apos;
+Trying to find Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;text&apos;]
+Found Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;text&apos;]
+Trying to find Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;password&apos;]
+Found Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;password&apos;]
+Trying to find Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]
+Found Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (08314e2a3e6e6356424966b48b8d07e1)] -&gt; xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (08314e2a3e6e6356424966b48b8d07e1)] -&gt; xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]]
+Interval time Fri Apr 17 20:22:09 IST 2020
+Interval time Fri Apr 17 20:22:10 IST 2020
+Page is fully loaded
+Trying to find Element By : By.xpath: //div[@class=&apos;_1jA3uo&apos;]/child::div
+Found Element By : By.xpath: //div[@class=&apos;_1jA3uo&apos;]/child::div
+Trying to find Element By : By.xpath: //div/ul[@class=&apos;RlwYhr undefined&apos;]/child::li/a/div[text()=&apos;Logout&apos;]
+Exception occured: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div/ul[@class=&apos;RlwYhr undefined&apos;]/child::li/a/div[text()=&apos;Logout&apos;]&quot;}
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;DESKTOP-OFC8VFN&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55284}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 08314e2a3e6e6356424966b48b8d07e1
+*** Element info: {Using=xpath, value=//div/ul[@class=&apos;RlwYhr undefined&apos;]/child::li/a/div[text()=&apos;Logout&apos;]}
+Exception occured: org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;DESKTOP-OFC8VFN&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: EventFiringWebDriver
+</system-out>
+    <system-err>Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 36738
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Apr 17, 2020 8:22:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1587135125.621][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135125.861][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135127.150][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135127.565][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135127.874][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135128.169][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135128.567][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135132.356][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135132.458][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135133.125][SEVERE]: Timed out receiving message from renderer: 0.100
+</system-err>
+  </testcase>
+  <testcase classname="com.qa.flipkart.tests.HomePageTest" name="getMenuBarList" time="5.583"/>
+  <testcase classname="com.qa.flipkart.tests.HomePageTest" name="verifyAppUrl" time="0.064"/>
+  <testcase classname="com.qa.flipkart.tests.HomePageTest" name="verifyHomePageTitle" time="0.008"/>
+  <testcase classname="com.qa.flipkart.tests.HomePageTest" name="verifySubMenuBarListTest" time="6.905"/>
+  <testcase classname="com.qa.flipkart.tests.LoginPageTest" name="login" time="1.107"/>
+  <testcase classname="com.qa.flipkart.tests.MyProfilePageTest" name="verifyMyProfilePageTitleTest" time="6.059"/>
+  <testcase classname="com.qa.flipkart.tests.OffersPageTest" name="verifyOffersPageTitle" time="4.442">
+    <failure message="stale element reference: element is not attached to the page document
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;DESKTOP-OFC8VFN&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7a974ddcbac9cde72d873f895436d5e0" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;DESKTOP-OFC8VFN&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7a974ddcbac9cde72d873f895436d5e0
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:308)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:405)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:418)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.qa.flipkart.pages.HomePage.verifyOfferZoneSubMenu(HomePage.java:135)
+	at com.qa.flipkart.tests.OffersPageTest.verifyOffersPageTitle(OffersPageTest.java:34)
+</failure>
+    <system-out>close the browser
+Before navigating to: &apos;https://www.flipkart.com/&apos;
+Navigated to:&apos;https://www.flipkart.com/&apos;
+Trying to find Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;text&apos;]
+Found Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;text&apos;]
+Trying to find Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;password&apos;]
+Found Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/input[@type=&apos;password&apos;]
+Trying to find Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]
+Found Element By : By.xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (7a974ddcbac9cde72d873f895436d5e0)] -&gt; xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (7a974ddcbac9cde72d873f895436d5e0)] -&gt; xpath: //div[@class=&apos;_3Njdz7&apos;]//following::div/button[@type=&apos;submit&apos;]]
+Interval time Fri Apr 17 20:23:54 IST 2020
+Interval time Fri Apr 17 20:23:54 IST 2020
+Page is fully loaded
 Trying to find Element By : By.xpath: //div[@class=&apos;_3zdbog _3Ed3Ub&apos;]/ul/child::li/a/span[text()=&apos;Offer Zone&apos;]
 Found Element By : By.xpath: //div[@class=&apos;_3zdbog _3Ed3Ub&apos;]/ul/child::li/a/span[text()=&apos;Offer Zone&apos;]
-Trying to click on: [[ChromeDriver: chrome on WINDOWS (261ce823a644ab89638879a7cf441c19)] -&gt; xpath: //div[@class=&apos;_3zdbog _3Ed3Ub&apos;]/ul/child::li/a/span[text()=&apos;Offer Zone&apos;]]
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (7a974ddcbac9cde72d873f895436d5e0)] -&gt; xpath: //div[@class=&apos;_3zdbog _3Ed3Ub&apos;]/ul/child::li/a/span[text()=&apos;Offer Zone&apos;]]
 Exception occured: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=80.0.3987.163)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
 System info: host: &apos;DESKTOP-OFC8VFN&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49543}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 261ce823a644ab89638879a7cf441c19
-04-17-2020 17:41:35 PoolingHttpClientConnectionManager.java DEBUG [Finalizer] conn.PoolingHttpClientConnectionManager 408 - Connection manager is shutting down
-04-17-2020 17:41:35 PoolingHttpClientConnectionManager.java DEBUG [Finalizer] conn.PoolingHttpClientConnectionManager 414 - Connection manager shut down
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7a974ddcbac9cde72d873f895436d5e0
 </system-out>
-    <system-err>Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 21039
+    <system-err>Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 10460
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-Apr 17, 2020 5:41:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Apr 17, 2020 8:23:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-[1587125481.419][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125481.526][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125481.631][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125481.737][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125481.840][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125481.982][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125483.570][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125485.468][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125486.066][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125486.770][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125487.586][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125488.222][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125492.826][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125493.397][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125493.532][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125493.970][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125494.169][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587125494.737][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135230.858][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135230.966][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135231.576][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135232.216][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135232.536][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135232.960][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135233.277][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135233.400][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135235.822][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135236.101][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587135236.264][SEVERE]: Timed out receiving message from renderer: 0.100
 </system-err>
   </testcase>
-  <testcase classname="com.qa.flipkart.tests.HomePageTest" name="verifyAppUrl" time="0.042"/>
-  <testcase classname="com.qa.flipkart.tests.HomePageTest" name="verifyHomePageTitle" time="1.128"/>
-  <testcase classname="com.qa.flipkart.tests.HomePageTest" name="verifySubMenuBarListTest" time="12.746"/>
-  <testcase classname="com.qa.flipkart.tests.LoginPageTest" name="login" time="2.188"/>
 </testsuite>

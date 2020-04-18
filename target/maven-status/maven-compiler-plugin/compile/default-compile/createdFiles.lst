@@ -8,5 +8,6 @@ com\qa\flipkart\retry\MyTransformer.class
 com\qa\flipkart\testiutil\TestUtil.class
 com\qa\flipkart\testiutil\TestUtil$1.class
 com\qa\flipkart\pages\HomePage.class
+com\qa\flipkart\pages\MyProfilePage.class
 constantsUtil\Constants.class
 com\qa\flipkart\extentreportlistener\ExtentReportListener.class

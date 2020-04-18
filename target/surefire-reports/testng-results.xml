@@ -1,35 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" ignored="0" total="9" passed="6">
+<testng-results skipped="0" failed="4" ignored="0" total="10" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="197049" started-at="2020-04-17T12:09:34Z" finished-at="2020-04-17T12:12:51Z">
+  <suite name="Command line suite" duration-ms="149385" started-at="2020-04-17T14:51:28Z" finished-at="2020-04-17T14:53:58Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="197049" started-at="2020-04-17T12:09:34Z" finished-at="2020-04-17T12:12:51Z">
-      <class name="com.qa.flipkart.tests.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@6276ae34]" name="setUp" is-config="true" duration-ms="24570" started-at="2020-04-17T12:09:34Z" finished-at="2020-04-17T12:09:59Z">
+    <test name="Command line test" duration-ms="149385" started-at="2020-04-17T14:51:28Z" finished-at="2020-04-17T14:53:58Z">
+      <class name="com.qa.flipkart.tests.GroceryPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests.GroceryPageTest@5cc7c2a6]" name="setUp" is-config="true" duration-ms="11427" started-at="2020-04-17T14:51:28Z" finished-at="2020-04-17T14:51:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="clickOnSearchBar()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@6276ae34]" name="clickOnSearchBar" duration-ms="11399" started-at="2020-04-17T12:09:59Z" finished-at="2020-04-17T12:10:10Z">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method status="FAIL" signature="verifyTitle()[pri:0, instance:com.qa.flipkart.tests.GroceryPageTest@5cc7c2a6]" name="verifyTitle" duration-ms="4534" started-at="2020-04-17T14:51:40Z" finished-at="2020-04-17T14:51:44Z">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[element click intercepted: Element <button class="vh79eN" type="submit">...</button> is not clickable at point (815, 28). Other element would receive the click: <div class="_2ISNhP _3AOFWO" tabindex="-1">...</div>
+              <![CDATA[stale element reference: element is not attached to the page document
   (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
 System info: host: 'DESKTOP-OFC8VFN', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49261}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2214fbf451f61cbe61cc2cb9b1046e91]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55153}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dece2adc7b6dbd8c4b5ca1698f7820f8]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="vh79eN" type="submit">...</button> is not clickable at point (815, 28). Other element would receive the click: <div class="_2ISNhP _3AOFWO" tabindex="-1">...</div>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
 System info: host: 'DESKTOP-OFC8VFN', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49261}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2214fbf451f61cbe61cc2cb9b1046e91
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55153}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dece2adc7b6dbd8c4b5ca1698f7820f8
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -54,9 +56,217 @@ at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at com.sun.proxy.$Proxy6.click(Unknown Source)
-at com.qa.flipkart.pages.HomePage.doSearchBar(HomePage.java:57)
-at com.qa.flipkart.tests.HomePageTest.clickOnSearchBar(HomePageTest.java:65)
+at com.sun.proxy.$Proxy9.click(Unknown Source)
+at com.qa.flipkart.pages.HomePage.verifyGroferSubMenu(HomePage.java:129)
+at com.qa.flipkart.tests.GroceryPageTest.verifyTitle(GroceryPageTest.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.flipkart.tests.GroceryPageTest@5cc7c2a6]" name="tearDown" is-config="true" duration-ms="2199" started-at="2020-04-17T14:51:44Z" finished-at="2020-04-17T14:51:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.flipkart.tests.GroceryPageTest -->
+      <class name="com.qa.flipkart.tests.OffersPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests.OffersPageTest@5056dfcb]" name="setUp" is-config="true" duration-ms="7234" started-at="2020-04-17T14:53:46Z" finished-at="2020-04-17T14:53:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyOffersPageTitle()[pri:0, instance:com.qa.flipkart.tests.OffersPageTest@5056dfcb]" name="verifyOffersPageTitle" duration-ms="4429" started-at="2020-04-17T14:53:53Z" finished-at="2020-04-17T14:53:57Z">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'DESKTOP-OFC8VFN', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7a974ddcbac9cde72d873f895436d5e0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'DESKTOP-OFC8VFN', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7a974ddcbac9cde72d873f895436d5e0
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:308)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:405)
+at com.sun.proxy.$Proxy11.click(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:418)
+at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at com.sun.proxy.$Proxy9.click(Unknown Source)
+at com.qa.flipkart.pages.HomePage.verifyOfferZoneSubMenu(HomePage.java:135)
+at com.qa.flipkart.tests.OffersPageTest.verifyOffersPageTitle(OffersPageTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOffersPageTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.flipkart.tests.OffersPageTest@5056dfcb]" name="tearDown" is-config="true" duration-ms="247" started-at="2020-04-17T14:53:57Z" finished-at="2020-04-17T14:53:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.flipkart.tests.OffersPageTest -->
+      <class name="com.qa.flipkart.tests.MyProfilePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests.MyProfilePageTest@32e6e9c3]" name="setUp" is-config="true" duration-ms="7709" started-at="2020-04-17T14:53:30Z" finished-at="2020-04-17T14:53:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyMyProfilePageTitleTest()[pri:0, instance:com.qa.flipkart.tests.MyProfilePageTest@32e6e9c3]" name="verifyMyProfilePageTitleTest" duration-ms="6065" started-at="2020-04-17T14:53:38Z" finished-at="2020-04-17T14:53:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMyProfilePageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.flipkart.tests.MyProfilePageTest@32e6e9c3]" name="tearDown" is-config="true" duration-ms="2191" started-at="2020-04-17T14:53:44Z" finished-at="2020-04-17T14:53:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.flipkart.tests.MyProfilePageTest -->
+      <class name="com.qa.flipkart.tests.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@b97c004]" name="setUp" is-config="true" duration-ms="7737" started-at="2020-04-17T14:51:47Z" finished-at="2020-04-17T14:51:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="clickOnSearchBar()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@b97c004]" name="clickOnSearchBar" duration-ms="5755" started-at="2020-04-17T14:51:54Z" finished-at="2020-04-17T14:52:00Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button class="vh79eN" type="submit">...</button> is not clickable at point (815, 28). Other element would receive the click: <div class="_2ISNhP _3AOFWO" tabindex="-1">...</div>
+  (Session info: chrome=80.0.3987.163)
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'DESKTOP-OFC8VFN', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55225}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: aa1b631f6d31ba01686683211c71f1cd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="vh79eN" type="submit">...</button> is not clickable at point (815, 28). Other element would receive the click: <div class="_2ISNhP _3AOFWO" tabindex="-1">...</div>
+  (Session info: chrome=80.0.3987.163)
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'DESKTOP-OFC8VFN', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55225}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: aa1b631f6d31ba01686683211c71f1cd
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:308)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:405)
+at com.sun.proxy.$Proxy11.click(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:418)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at com.sun.proxy.$Proxy9.click(Unknown Source)
+at com.qa.flipkart.pages.HomePage.doSearchBar(HomePage.java:59)
+at com.qa.flipkart.tests.HomePageTest.clickOnSearchBar(HomePageTest.java:69)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -98,28 +308,65 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnSearchBar -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@6276ae34]" name="tearDown" is-config="true" duration-ms="853" started-at="2020-04-17T12:10:10Z" finished-at="2020-04-17T12:10:11Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@b97c004]" name="tearDown" is-config="true" duration-ms="418" started-at="2020-04-17T14:52:00Z" finished-at="2020-04-17T14:52:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@6276ae34]" name="setUp" is-config="true" duration-ms="13314" started-at="2020-04-17T12:10:11Z" finished-at="2020-04-17T12:10:25Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@b97c004]" name="setUp" is-config="true" duration-ms="7719" started-at="2020-04-17T14:52:00Z" finished-at="2020-04-17T14:52:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="doLogout()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@6276ae34]" name="doLogout" duration-ms="2985" started-at="2020-04-17T12:10:25Z" finished-at="2020-04-17T12:10:28Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="doLogout()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@b97c004]" name="doLogout" duration-ms="25972" started-at="2020-04-17T14:52:08Z" finished-at="2020-04-17T14:52:34Z">
+          <exception class="org.openqa.selenium.json.JsonException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[java.lang.reflect.InvocationTargetException
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'DESKTOP-OFC8VFN', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: EventFiringWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:568)
-at org.testng.Assert.assertEquals(Assert.java:578)
-at com.qa.flipkart.tests.HomePageTest.doLogout(HomePageTest.java:81)
+              <![CDATA[org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'DESKTOP-OFC8VFN', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: EventFiringWebDriver
+at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:344)
+at org.openqa.selenium.json.JsonOutput.lambda$new$15(JsonOutput.java:147)
+at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:275)
+at org.openqa.selenium.json.JsonOutput.lambda$new$21(JsonOutput.java:162)
+at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+at java.util.Iterator.forEachRemaining(Iterator.java:116)
+at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)
+at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:162)
+at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:275)
+at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:175)
+at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
+at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:170)
+at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:275)
+at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:266)
+at org.openqa.selenium.json.Json.toJson(Json.java:40)
+at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:233)
+at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:122)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:646)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:106)
+at com.sun.proxy.$Proxy5.perform(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.perform(EventFiringWebDriver.java:361)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
+at com.qa.flipkart.pages.HomePage.logout(HomePage.java:80)
+at com.qa.flipkart.tests.HomePageTest.doLogout(HomePageTest.java:87)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -155,65 +402,29 @@ at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(Provide
 at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doLogout -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@6276ae34]" name="tearDown" is-config="true" duration-ms="2927" started-at="2020-04-17T12:10:28Z" finished-at="2020-04-17T12:10:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@6276ae34]" name="setUp" is-config="true" duration-ms="14640" started-at="2020-04-17T12:10:30Z" finished-at="2020-04-17T12:10:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="getMenuBarList()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@6276ae34]" name="getMenuBarList" duration-ms="9198" started-at="2020-04-17T12:10:45Z" finished-at="2020-04-17T12:10:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getMenuBarList -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@6276ae34]" name="tearDown" is-config="true" duration-ms="818" started-at="2020-04-17T12:10:54Z" finished-at="2020-04-17T12:10:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@6276ae34]" name="setUp" is-config="true" duration-ms="11188" started-at="2020-04-17T12:10:55Z" finished-at="2020-04-17T12:11:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="goToGroceryPageTest()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@6276ae34]" name="goToGroceryPageTest" duration-ms="7069" started-at="2020-04-17T12:11:06Z" finished-at="2020-04-17T12:11:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToGroceryPageTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@6276ae34]" name="tearDown" is-config="true" duration-ms="1008" started-at="2020-04-17T12:11:13Z" finished-at="2020-04-17T12:11:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@6276ae34]" name="setUp" is-config="true" duration-ms="13596" started-at="2020-04-17T12:11:14Z" finished-at="2020-04-17T12:11:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="goToOffersPageTest()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@6276ae34]" name="goToOffersPageTest" duration-ms="8590" started-at="2020-04-17T12:11:28Z" finished-at="2020-04-17T12:11:37Z">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: element is not attached to the page document
+Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'DESKTOP-OFC8VFN', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: EventFiringWebDriver
+at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:291)
+at org.openqa.selenium.json.Json.toJson(Json.java:38)
+... 51 more
+Caused by: java.lang.reflect.InvocationTargetException
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:340)
+... 72 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div/ul[@class='RlwYhr undefined']/child::li/a/div[text()='Logout']"}
   (Session info: chrome=80.0.3987.163)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
 System info: host: 'DESKTOP-OFC8VFN', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49543}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 261ce823a644ab89638879a7cf441c19]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=80.0.3987.163)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
-System info: host: 'DESKTOP-OFC8VFN', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49543}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 261ce823a644ab89638879a7cf441c19
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Mudit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55284}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 08314e2a3e6e6356424966b48b8d07e1
+*** Element info: {Using=xpath, value=//div/ul[@class='RlwYhr undefined']/child::li/a/div[text()='Logout']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -224,115 +435,94 @@ at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpRespo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:308)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
-at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:405)
-at com.sun.proxy.$Proxy11.click(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:418)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at com.sun.proxy.$Proxy6.click(Unknown Source)
-at com.qa.flipkart.pages.HomePage.verifyOfferZoneSubMenu(HomePage.java:133)
-at com.qa.flipkart.tests.HomePageTest.goToOffersPageTest(HomePageTest.java:115)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:106)
+at com.sun.proxy.$Proxy5.findElement(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:195)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy9.getWrappedElement(Unknown Source)
+at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
+at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
+at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:73)
+at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:82)
+... 77 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- org.openqa.selenium.json.JsonException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToOffersPageTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@6276ae34]" name="tearDown" is-config="true" duration-ms="607" started-at="2020-04-17T12:11:37Z" finished-at="2020-04-17T12:11:37Z">
+        </test-method> <!-- doLogout -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@b97c004]" name="tearDown" is-config="true" duration-ms="211" started-at="2020-04-17T14:52:34Z" finished-at="2020-04-17T14:52:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@6276ae34]" name="setUp" is-config="true" duration-ms="13854" started-at="2020-04-17T12:11:37Z" finished-at="2020-04-17T12:11:51Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@b97c004]" name="setUp" is-config="true" duration-ms="7960" started-at="2020-04-17T14:52:34Z" finished-at="2020-04-17T14:52:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyAppUrl()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@6276ae34]" name="verifyAppUrl" duration-ms="50" started-at="2020-04-17T12:11:51Z" finished-at="2020-04-17T12:11:51Z">
+        <test-method status="PASS" signature="getMenuBarList()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@b97c004]" name="getMenuBarList" duration-ms="5585" started-at="2020-04-17T14:52:42Z" finished-at="2020-04-17T14:52:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMenuBarList -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@b97c004]" name="tearDown" is-config="true" duration-ms="258" started-at="2020-04-17T14:52:48Z" finished-at="2020-04-17T14:52:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@b97c004]" name="setUp" is-config="true" duration-ms="7907" started-at="2020-04-17T14:52:48Z" finished-at="2020-04-17T14:52:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyAppUrl()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@b97c004]" name="verifyAppUrl" duration-ms="64" started-at="2020-04-17T14:52:56Z" finished-at="2020-04-17T14:52:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAppUrl -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@6276ae34]" name="tearDown" is-config="true" duration-ms="1078" started-at="2020-04-17T12:11:51Z" finished-at="2020-04-17T12:11:52Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@b97c004]" name="tearDown" is-config="true" duration-ms="464" started-at="2020-04-17T14:52:56Z" finished-at="2020-04-17T14:52:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@6276ae34]" name="setUp" is-config="true" duration-ms="13923" started-at="2020-04-17T12:11:52Z" finished-at="2020-04-17T12:12:06Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@b97c004]" name="setUp" is-config="true" duration-ms="7227" started-at="2020-04-17T14:52:57Z" finished-at="2020-04-17T14:53:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyHomePageTitle()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@6276ae34]" name="verifyHomePageTitle" duration-ms="1154" started-at="2020-04-17T12:12:06Z" finished-at="2020-04-17T12:12:07Z">
+        <test-method status="PASS" signature="verifyHomePageTitle()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@b97c004]" name="verifyHomePageTitle" duration-ms="64" started-at="2020-04-17T14:53:04Z" finished-at="2020-04-17T14:53:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageTitle -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@6276ae34]" name="tearDown" is-config="true" duration-ms="702" started-at="2020-04-17T12:12:07Z" finished-at="2020-04-17T12:12:08Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@b97c004]" name="tearDown" is-config="true" duration-ms="2493" started-at="2020-04-17T14:53:04Z" finished-at="2020-04-17T14:53:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@6276ae34]" name="setUp" is-config="true" duration-ms="12133" started-at="2020-04-17T12:12:08Z" finished-at="2020-04-17T12:12:20Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@b97c004]" name="setUp" is-config="true" duration-ms="7130" started-at="2020-04-17T14:53:06Z" finished-at="2020-04-17T14:53:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifySubMenuBarListTest()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@6276ae34]" name="verifySubMenuBarListTest" duration-ms="12834" started-at="2020-04-17T12:12:20Z" finished-at="2020-04-17T12:12:33Z">
+        <test-method status="PASS" signature="verifySubMenuBarListTest()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@b97c004]" name="verifySubMenuBarListTest" duration-ms="6906" started-at="2020-04-17T14:53:14Z" finished-at="2020-04-17T14:53:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySubMenuBarListTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@6276ae34]" name="tearDown" is-config="true" duration-ms="541" started-at="2020-04-17T12:12:33Z" finished-at="2020-04-17T12:12:34Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.flipkart.tests.HomePageTest@b97c004]" name="tearDown" is-config="true" duration-ms="275" started-at="2020-04-17T14:53:20Z" finished-at="2020-04-17T14:53:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.flipkart.tests.HomePageTest -->
       <class name="com.qa.flipkart.tests.LoginPageTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.qa.flipkart.tests.LoginPageTest@7946e1f4]" name="init" is-config="true" duration-ms="13797" started-at="2020-04-17T12:12:34Z" finished-at="2020-04-17T12:12:48Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.qa.flipkart.tests.LoginPageTest@4590c9c3]" name="init" is-config="true" duration-ms="7198" started-at="2020-04-17T14:53:21Z" finished-at="2020-04-17T14:53:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.qa.flipkart.tests.LoginPageTest@7946e1f4]" name="login" duration-ms="2157" started-at="2020-04-17T12:12:48Z" finished-at="2020-04-17T12:12:50Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.qa.flipkart.tests.LoginPageTest@4590c9c3]" name="login" duration-ms="1104" started-at="2020-04-17T14:53:28Z" finished-at="2020-04-17T14:53:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDownAll()[pri:0, instance:com.qa.flipkart.tests.LoginPageTest@7946e1f4]" name="tearDownAll" is-config="true" duration-ms="1537" started-at="2020-04-17T12:12:50Z" finished-at="2020-04-17T12:12:51Z">
+        <test-method status="PASS" signature="tearDownAll()[pri:0, instance:com.qa.flipkart.tests.LoginPageTest@4590c9c3]" name="tearDownAll" is-config="true" duration-ms="803" started-at="2020-04-17T14:53:29Z" finished-at="2020-04-17T14:53:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownAll -->
