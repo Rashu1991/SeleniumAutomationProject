@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Mudit\AppData\Local\Temp\testng-eclipse--1654920710\testng-customsuite.xml</span>
+                    <span>C:\Users\Mudit\AppData\Local\Temp\testng-eclipse--2031824376\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -130,7 +130,7 @@
                   <span class="method-name">login</span>
                   <div class="stack-trace">org.testng.TestNGException: 
 Parameter &apos;Browser1&apos; is required by BeforeMethod on method init but has not been marked @Optional or defined
-in C:\Users\Mudit\AppData\Local\Temp\testng-eclipse--1654920710\testng-customsuite.xml
+in C:\Users\Mudit\AppData\Local\Temp\testng-eclipse--2031824376\testng-customsuite.xml
 	at org.testng.internal.Parameters.createParams(Parameters.java:290)
 	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
@@ -165,7 +165,7 @@ in C:\Users\Mudit\AppData\Local\Temp\testng-eclipse--1654920710\testng-customsui
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Mudit\AppData\Local\Temp\testng-eclipse--1654920710\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Mudit\AppData\Local\Temp\testng-eclipse--2031824376\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -174,7 +174,11 @@ in C:\Users\Mudit\AppData\Local\Temp\testng-eclipse--1654920710\testng-customsui
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.qa.flipkart.tests.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.flipkart.tests.LoginPageTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.qa.flipkart.tests.LoginPageTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;

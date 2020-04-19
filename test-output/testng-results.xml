@@ -2,22 +2,22 @@
 <testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="197" started-at="2020-04-19T09:30:35Z" finished-at="2020-04-19T09:30:35Z">
+  <suite name="Default suite" duration-ms="226" started-at="2020-04-19T17:31:10Z" finished-at="2020-04-19T17:31:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="197" started-at="2020-04-19T09:30:35Z" finished-at="2020-04-19T09:30:35Z">
+    <test name="Default test" duration-ms="226" started-at="2020-04-19T17:31:10Z" finished-at="2020-04-19T17:31:10Z">
       <class name="com.qa.flipkart.tests.LoginPageTest">
-        <test-method status="FAIL" signature="init(java.lang.String)[pri:0, instance:com.qa.flipkart.tests.LoginPageTest@6e1567f1]" name="init" is-config="true" duration-ms="0" started-at="2020-04-19T09:30:35Z" finished-at="2020-04-19T09:30:35Z">
+        <test-method status="FAIL" signature="init(java.lang.String)[pri:0, instance:com.qa.flipkart.tests.LoginPageTest@56ef9176]" name="init" is-config="true" duration-ms="0" started-at="2020-04-19T17:31:10Z" finished-at="2020-04-19T17:31:10Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'Browser1' is required by BeforeMethod on method init but has not been marked @Optional or defined
-in C:\Users\Mudit\AppData\Local\Temp\testng-eclipse--1654920710\testng-customsuite.xml]]>
+in C:\Users\Mudit\AppData\Local\Temp\testng-eclipse--2031824376\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'Browser1' is required by BeforeMethod on method init but has not been marked @Optional or defined
-in C:\Users\Mudit\AppData\Local\Temp\testng-eclipse--1654920710\testng-customsuite.xml
+in C:\Users\Mudit\AppData\Local\Temp\testng-eclipse--2031824376\testng-customsuite.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:290)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
 at org.testng.internal.Parameters.createParameters(Parameters.java:620)
@@ -49,17 +49,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="SKIP" signature="login()[pri:0, instance:com.qa.flipkart.tests.LoginPageTest@6e1567f1]" name="login" duration-ms="0" started-at="2020-04-19T09:30:35Z" finished-at="2020-04-19T09:30:35Z">
+        <test-method status="SKIP" signature="login()[pri:0, instance:com.qa.flipkart.tests.LoginPageTest@56ef9176]" name="login" duration-ms="0" started-at="2020-04-19T17:31:10Z" finished-at="2020-04-19T17:31:10Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'Browser1' is required by BeforeMethod on method init but has not been marked @Optional or defined
-in C:\Users\Mudit\AppData\Local\Temp\testng-eclipse--1654920710\testng-customsuite.xml]]>
+in C:\Users\Mudit\AppData\Local\Temp\testng-eclipse--2031824376\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'Browser1' is required by BeforeMethod on method init but has not been marked @Optional or defined
-in C:\Users\Mudit\AppData\Local\Temp\testng-eclipse--1654920710\testng-customsuite.xml
+in C:\Users\Mudit\AppData\Local\Temp\testng-eclipse--2031824376\testng-customsuite.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:290)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
 at org.testng.internal.Parameters.createParameters(Parameters.java:620)
@@ -91,7 +91,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="SKIP" signature="tearDownAll()[pri:0, instance:com.qa.flipkart.tests.LoginPageTest@6e1567f1]" name="tearDownAll" is-config="true" duration-ms="0" started-at="2020-04-19T09:30:35Z" finished-at="2020-04-19T09:30:35Z">
+        <test-method status="SKIP" signature="tearDownAll()[pri:0, instance:com.qa.flipkart.tests.LoginPageTest@56ef9176]" name="tearDownAll" is-config="true" duration-ms="0" started-at="2020-04-19T17:31:10Z" finished-at="2020-04-19T17:31:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownAll -->
