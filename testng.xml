@@ -7,7 +7,7 @@
 		<listener class-name="com.qa.flipkart.retry.MyTransformer" />
 	</listeners>
 	<parameter name="Browser1" value="chrome" />
-	<parameter name="Browser2" value="FF"/>
+	<!--  <parameter name="Browser2" value="FF"/> -->
 	<test name="Smoke Tests">
 		
 		<classes>

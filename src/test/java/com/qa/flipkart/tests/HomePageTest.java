@@ -43,7 +43,7 @@ public class HomePageTest extends TestBase {
 		super();
 	}
 
-	@Parameters("Browser2")
+	@Parameters("Browser1")
 	@BeforeMethod
 	public void setUp(String browser) {
 		TestBase.initialize(browser);
