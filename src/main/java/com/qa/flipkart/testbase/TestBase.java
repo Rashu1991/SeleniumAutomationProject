@@ -27,7 +27,7 @@ public class TestBase {
 	public TestBase() {
 		prop = new Properties();
 		try {
-			fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\com\\qa\\flipkart\\config\\config.properties");
+			fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/qa/flipkart/config/config.properties");
 			prop.load(fis);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block

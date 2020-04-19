@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-<listeners>
-	<listener class-name="com.qa.flipkart.extentreportlistener.ExtentReportListener"/>
-	<listener class-name="com.qa.flipkart.retry.MyTransformer"/>
-</listeners>
-  <test  name="Smoke Tests">
-    <classes>
-    <!-- <class name="com.qa.flipkart.tests.HomePageTest"/>
-     <class name="com.qa.flipkart.tests.LoginPageTest"/>
-      <class name = "com.qa.flipkart.tests.GroceryPageTest"/>
-      <class name="com.qa.flipkart.tests.OffersPageTest"/> -->
-      <class name ="com.qa.flipkart.tests.MyProfilePageTest"/>
-    </classes>
-  </test> <!-- Test -->
+	<listeners>
+		<listener
+			class-name="com.qa.flipkart.extentreportlistener.ExtentReportListener" />
+		<listener class-name="com.qa.flipkart.retry.MyTransformer" />
+	</listeners>
+	<parameter name="Browser1" value="chrome" />
+	<parameter name="Browser2" value="FF"/>
+	<test name="Smoke Tests">
+		
+		<classes>
+			<class name="com.qa.flipkart.tests.LoginPageTest" />
+	        <class name="com.qa.flipkart.tests.HomePageTest" />
+			<class name="com.qa.flipkart.tests.GroceryPageTest" />
+			<class name="com.qa.flipkart.tests.OffersPageTest" />
+			<class name="com.qa.flipkart.tests.MyProfilePageTest" />
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -2,9 +2,13 @@ package com.qa.flipkart.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.log4testng.Logger;
+
 
 import com.qa.flipkart.pages.GroceryPage;
 import com.qa.flipkart.pages.HomePage;
@@ -39,12 +43,14 @@ public class HomePageTest extends TestBase {
 		super();
 	}
 
+	@Parameters("Browser2")
 	@BeforeMethod
-	public void setUp() {
-		TestBase.initialize(prop.getProperty("browser"));
+	public void setUp(String browser) {
+		TestBase.initialize(browser);
 		TestBase.launchUrl();
 		homePage = new HomePage();
 		loginPage = new LoginPage();
+		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		
 	}
 
@@ -61,7 +67,6 @@ public class HomePageTest extends TestBase {
 
 	@Test
 	public void clickOnSearchBar() {
-		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		//Thread.sleep(3000);
 		driver.navigate().refresh();
 		TestUtil.waitForPageLoad(driver);
@@ -71,7 +76,6 @@ public class HomePageTest extends TestBase {
 
 	@Test
 	public void getMenuBarList(){
-		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		//Thread.sleep(5000);
 		TestUtil.waitForPageLoad(driver);
 		homePage.doGetMenuBarList();
@@ -80,7 +84,6 @@ public class HomePageTest extends TestBase {
 	
 	  @Test
 	  public void doLogout(){
-	  homePage=loginPage.login(prop.getProperty("username"),prop.getProperty("password"));
 	  //Thread.sleep(Constants.STATIC_TIMEOUT);
 	  TestUtil.waitForPageLoad(driver);
 	  homePage.doGetMenuBarList(0);
@@ -100,7 +103,6 @@ public class HomePageTest extends TestBase {
 	 
 	@Test
 	 public void verifySubMenuBarListTest() {
-			homePage=loginPage.login(prop.getProperty("username"),prop.getProperty("password"));
 			//Thread.sleep(Constants.STATIC_TIMEOUT);
 			TestUtil.waitForPageLoad(driver);
 			homePage.verifySubMenuBarList();
@@ -108,14 +110,12 @@ public class HomePageTest extends TestBase {
 
 	 @Test
 	 public GroceryPage goToGroceryPageTest() {
-		 homePage=loginPage.login(prop.getProperty("username"),prop.getProperty("password"));
 		 homePage.verifyGroferSubMenu();
 		 return new GroceryPage();
 	 }
 	 
 	 @Test
 	 public OffersPage goToOffersPageTest() {
-		 homePage=loginPage.login(prop.getProperty("username"),prop.getProperty("password"));
 		 homePage.verifyOfferZoneSubMenu();
 		 return new OffersPage();
 	 }

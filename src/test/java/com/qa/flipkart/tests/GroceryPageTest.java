@@ -4,6 +4,7 @@ import org.apache.tools.ant.taskdefs.WaitFor;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.qa.flipkart.pages.HomePage;
@@ -22,20 +23,22 @@ public class GroceryPageTest extends TestBase {
 		super();
 	}
 
+	@Parameters("Browser1")
 	@BeforeMethod
-	public void setUp() {
-			TestBase.initialize(prop.getProperty("browser"));
+	public void setUp(String browser) {
+			TestBase.initialize(browser);
 			TestBase.launchUrl();
 			loginPage= new LoginPage();
 			homePage = new HomePage();
+			homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+			TestUtil.waitForPageLoad(driver);
+			homePage.verifyGroferSubMenu();
 	}
 	
 	@Test
 	public void verifyTitle() {
-		 homePage=loginPage.login(prop.getProperty("username"),prop.getProperty("password"));
-		 TestUtil.waitForPageLoad(driver);
-		 homePage.verifyGroferSubMenu();
-		 //homePage=loginPage.login(prop.getProperty("username"),prop.getProperty("password"));
+		 
+		 
 		 driver.navigate().to(Constants.GROCERY_PAGE_URL);
 		 System.out.println(driver.getTitle());
 		 Assert.assertEquals(driver.getTitle(), Constants.GROCERY_PAGE_TITLE,"Grocery Page Title not verified");
