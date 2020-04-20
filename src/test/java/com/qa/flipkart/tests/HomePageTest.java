@@ -71,7 +71,7 @@ public class HomePageTest extends TestBase {
 		driver.navigate().refresh();
 		TestUtil.waitForPageLoad(driver);
 		
-		homePage.doSearchBar();
+		homePage.doSearchBar("");
 	}
 
 	@Test
@@ -84,8 +84,14 @@ public class HomePageTest extends TestBase {
 	
 	  @Test
 	  public void doLogout(){
-	  //Thread.sleep(Constants.STATIC_TIMEOUT);
+	 
 	  TestUtil.waitForPageLoad(driver);
+	  try {
+		Thread.sleep(Constants.STATIC_TIMEOUT);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 	  homePage.doGetMenuBarList(0);
 	  homePage.logout();
 	  }
@@ -119,9 +125,21 @@ public class HomePageTest extends TestBase {
 		 homePage.verifyOfferZoneSubMenu();
 		 return new OffersPage();
 	 }
-	@AfterMethod
+	
+	 @Test
+	 public void selectItem() {
+		 homePage.doSearchBar("mobile");
+		 
+	 }
+	 
+	 
+	 
+	 
+	 @AfterMethod
 	public void tearDown() {
 		
 		TestBase.close();
 	}
+	
+	
 }

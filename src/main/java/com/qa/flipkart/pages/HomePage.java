@@ -46,7 +46,8 @@ public class HomePage extends TestBase {
 	WebElement groceryLnk;
 	@FindBy(xpath="//div[@class='_3zdbog _3Ed3Ub']/ul/child::li/a/span[text()='Offer Zone']")
 	WebElement offerZoneLnk;
-	
+	@FindBy(xpath="//div[@class='bhgxx2 col-12-12']")
+	List<WebElement> listOfItems;
 	
 	public HomePage() {
 		PageFactory.initElements(driver, this);
@@ -54,8 +55,8 @@ public class HomePage extends TestBase {
 
 	// Page Actions
 
-	public void doSearchBar() {
-		srchBar.sendKeys("");
+	public void doSearchBar(String text) {
+		srchBar.sendKeys(text);
 		srchBtn.click();
 	}
 
@@ -140,7 +141,13 @@ public class HomePage extends TestBase {
 		Actions action = new Actions(driver);
 		action.moveToElement(myProfileLnk).build().perform();
 		myProfileLnk.click();
-		return new MyProfilePage();
+		return new MyProfilePage();	
+	}
+	
+	public void selectItemFromSearch() {
+		for(int i=0;i<listOfItems.size();i++) {
+			System.out.println(listOfItems.get(i).getText());
+		}
 		
 	}
 }

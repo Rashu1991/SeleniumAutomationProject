@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="Browser1" value="chrome"/>
+  <listeners>
+    <listener class-name="com.qa.flipkart.extentreportlistener.ExtentReportListener"/>
+    <listener class-name="com.qa.flipkart.retry.MyTransformer"/>
+  </listeners>
+  <test thread-count="5" name="Smoke Tests(failed)">
     <classes>
-      <class name="com.qa.flipkart.tests.LoginPageTest">
+      <class name="com.qa.flipkart.tests.MyProfilePageTest">
         <methods>
-          <include name="tearDownAll"/>
-          <include name="login"/>
-          <include name="init"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="selectRadioBtnTest_Female"/>
+          <include name="selectRadioBtnTest_Male"/>
         </methods>
-      </class> <!-- com.qa.flipkart.tests.LoginPageTest -->
+      </class> <!-- com.qa.flipkart.tests.MyProfilePageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Smoke Tests(failed) -->
+</suite> <!-- Failed suite [Suite] -->

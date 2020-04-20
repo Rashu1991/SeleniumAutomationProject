@@ -3,13 +3,21 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.flipkart.tests.LoginPageTest">
+      <class name="com.qa.flipkart.tests.MyProfilePageTest">
         <methods>
-          <include name="tearDownAll"/>
-          <include name="login"/>
-          <include name="init"/>
+          <include name="verifyMyProfilePageTitleTest"/>
+          <include name="setUp"/>
+          <include name="addAddressTest"/>
+          <include name="verifyPersonalInfoclickOnEdit"/>
+          <include name="tearDown"/>
+          <include name="clickOnManageAddressesLinkTest"/>
+          <include name="verifyClickOnEditEmailAddLnk"/>
+          <include name="enterLastNameTest"/>
+          <include name="selectRadioBtnTest_Female"/>
+          <include name="selectRadioBtnTest_Male"/>
+          <include name="enterFirstNameTest"/>
         </methods>
-      </class> <!-- com.qa.flipkart.tests.LoginPageTest -->
+      </class> <!-- com.qa.flipkart.tests.MyProfilePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

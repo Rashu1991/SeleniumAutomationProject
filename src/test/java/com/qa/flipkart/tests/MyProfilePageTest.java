@@ -3,6 +3,7 @@ package com.qa.flipkart.tests;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -19,6 +20,7 @@ public class MyProfilePageTest extends TestBase {
 	HomePage homePage;
 	LoginPage loginPage;
 	MyProfilePage myProfilePage;
+	public static String sheetName="userData";
 
 	public MyProfilePageTest() {
 		// TODO Auto-generated constructor stub
@@ -92,33 +94,6 @@ public class MyProfilePageTest extends TestBase {
 		myProfilePage.clickOnCancelLnkPersonalInfo();
 	}
 
-	@Test
-	public void selectRadioBtnTest_Male() {
-		driver.navigate().to(Constants.MYPROFILE_PAGE_URL);
-
-		boolean isClicked = myProfilePage.clickOnPersonalInfoEdit();
-		Assert.assertTrue(isClicked, "Not clicked on edit link");
-
-		boolean isSelected = myProfilePage.selectRadioBtnGender("Male");
-		Assert.assertTrue(isSelected, "Male radio button not seleted");
-
-		myProfilePage.clickOnCancelLnkPersonalInfo();
-
-	}
-
-	@Test
-	public void selectRadioBtnTest_Female() {
-		driver.navigate().to(Constants.MYPROFILE_PAGE_URL);
-
-		boolean isClicked = myProfilePage.clickOnPersonalInfoEdit();
-		Assert.assertTrue(isClicked, "Not clicked on edit link");
-
-		boolean isSelected = myProfilePage.selectRadioBtnGender("Female");
-		Assert.assertTrue(isSelected, "Female radio button not seleted");
-
-		myProfilePage.clickOnCancelLnkPersonalInfo();
-
-	}
 
 	@Test
 	public void verifyClickOnEditEmailAddLnk() {
@@ -132,6 +107,34 @@ public class MyProfilePageTest extends TestBase {
 
 	}
 
+	@Test
+	public void clickOnManageAddressesLinkTest() {
+		boolean isClicked=myProfilePage.clickOnManageAddressesLink();
+		Assert.assertTrue(isClicked,"Not clicked on Manage addresses link");
+		
+	}
+	
+	
+	@DataProvider(name="getTestData")
+	public static Object[][] getTestData(){
+		try {
+		Object [][]data=TestUtil.getData(sheetName);
+		return data;
+		}
+		catch(Exception e){
+			System.out.println(e.getStackTrace());
+			return null;
+		}
+	}
+	
+	@Test(dataProvider="getTestData")
+	public void addAddressTest(String name,String mobile,String pincode,String locality,String address,
+			String city,String state) {
+		myProfilePage.clickOnManageAddressesLink();
+		myProfilePage.addAddress(name, mobile, pincode, locality, address, city, state);
+
+	}
+	
 	@AfterMethod
 	public void tearDown() {
 		TestBase.close();

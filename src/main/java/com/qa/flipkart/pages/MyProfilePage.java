@@ -6,9 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.qa.flipkart.testbase.TestBase;
+import com.qa.flipkart.testiutil.TestUtil;
 
 public class MyProfilePage extends TestBase{
 
@@ -30,6 +32,26 @@ public class MyProfilePage extends TestBase{
 	WebElement emailTxtBox;
 	@FindBy(xpath="//div/a[text()='Cancel']")
 	WebElement cancelLnkEmailAdd;
+	@FindBy(xpath="//a/div[text()='Manage Addresses']")
+	WebElement mngAddrLnk;
+	@FindBy(name="name")
+	WebElement nameTxt;
+	@FindBy(name="phone")
+	WebElement mobileTxt;
+	@FindBy(name="pincode")
+	WebElement pincodeTxt;
+	@FindBy(name="addressLine2")
+	WebElement localityTxt;
+	@FindBy(name="addressLine1")
+	WebElement addressTxt;
+	@FindBy(name="city")
+	WebElement cityTxt;
+	@FindBy(name="state")
+	WebElement stateDropDown;
+	@FindBy(xpath="//div/button[text()='Cancel']")
+	WebElement cancelLnkAddAdr;
+	@FindBy(xpath="//div/button[text()='ADD ADDRESSES']")
+	WebElement btnAddAdr;
 	
 	
 	
@@ -109,4 +131,39 @@ public class MyProfilePage extends TestBase{
 	
 	return false;
 }
+	
+	
+	// Account Settings -> Manage Address
+	
+	public boolean clickOnManageAddressesLink() {
+		if(mngAddrLnk.isEnabled()) {
+			mngAddrLnk.click();
+			return true;
+		}
+		return false;
+	}
+	
+	public void addAddress(String name,String mobile,String pincode,String locality,String address,
+			String city,String state) {
+		if(btnAddAdr.isEnabled()) {
+			btnAddAdr.click();
+			nameTxt.clear();
+		nameTxt.sendKeys(name);
+		mobileTxt.clear();
+		mobileTxt.sendKeys(mobile);
+		pincodeTxt.clear();
+		pincodeTxt.sendKeys(pincode);
+		localityTxt.clear();
+		localityTxt.sendKeys(locality);
+		addressTxt.clear();
+		addressTxt.sendKeys(address);
+		cityTxt.clear();
+		cityTxt.sendKeys(city);
+		Select sel = new Select(stateDropDown);
+		sel.selectByVisibleText("Himachal Pradesh");
+		cancelLnkAddAdr.click();
+		}
+		
+		
+	}
 }

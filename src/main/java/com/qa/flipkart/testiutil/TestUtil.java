@@ -25,8 +25,9 @@ import com.qa.flipkart.testbase.TestBase;
 
 public class TestUtil extends TestBase {
 
-	static FileInputStream fis;
-	static Workbook book;static Sheet sheet;
+	public static FileInputStream fis;
+	public static Workbook book;public static Sheet sheet;
+	public static String testSheetPath="C:\\Users\\Mudit\\eclipse-workspace\\POMAutomationPractice\\src\\main\\java\\com\\qa\\flipkart\\testdata\\testData.xlsx";
 	public static void waitForPageLoad(WebDriver driver) {
 
 		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
@@ -80,8 +81,7 @@ public class TestUtil extends TestBase {
 	
 	public static Object[][] getData(String sheetName) throws EncryptedDocumentException, IOException{
 		
-		fis = new FileInputStream("C:\\Users\\Mudit\\eclipse-workspace"
-				+ "\\POMAutomationPractice\\src\\main\\java\\com\\qa\\flipkart\\testdata\\testData.xlsx");
+		fis = new FileInputStream(testSheetPath);
 		
 		book=WorkbookFactory.create(fis);
 		sheet = book.getSheet(sheetName);
@@ -96,5 +96,4 @@ public class TestUtil extends TestBase {
 		
 	}
 	
-
-}
+	}
