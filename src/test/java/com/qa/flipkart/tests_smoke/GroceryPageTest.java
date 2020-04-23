@@ -1,4 +1,4 @@
-package com.qa.flipkart.tests;
+package com.qa.flipkart.tests_smoke;
 
 import org.apache.tools.ant.taskdefs.WaitFor;
 import org.testng.Assert;

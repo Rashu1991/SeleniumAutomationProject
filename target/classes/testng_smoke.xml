@@ -11,11 +11,11 @@
 	<test name="Smoke Tests">
 		
 		<classes>
-	<!-- 	 <class name="com.qa.flipkart.tests.LoginPageTest" />
-	        <class name="com.qa.flipkart.tests.HomePageTest" />
- 			<class name="com.qa.flipkart.tests.GroceryPageTest" />
-			<class name="com.qa.flipkart.tests.OffersPageTest" /> -->
-			<class name="com.qa.flipkart.tests.MyProfilePageTest" /> 
+			<class name="com.qa.flipkart.tests_smoke.LoginPageTest" />
+	        <class name="com.qa.flipkart.tests_smoke.HomePageTest" />
+ 			<class name="com.qa.flipkart.tests_smoke.GroceryPageTest" />
+			<class name="com.qa.flipkart.tests_smoke.OffersPageTest" />
+			<class name="com.qa.flipkart.tests_smoke.MyProfilePageTest" /> 
 		</classes>	
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

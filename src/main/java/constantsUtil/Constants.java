@@ -12,7 +12,8 @@ public class Constants {
 	public static String OFFERS_PAGE_URL="https://www.flipkart.com/offers-store";
 	public static String MYPROFILE_PAGE_URL="https://www.flipkart.com/account";
 	public static String MYPROFILE_PAGE_TITLE="My Profile";
-	
+	public static String INVALID_USERNAME="deufgejfbi";
+	public static String INVALID_PASSWORD="    ";
 	
 
 }

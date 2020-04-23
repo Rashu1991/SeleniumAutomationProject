@@ -1,4 +1,4 @@
-package com.qa.flipkart.tests;
+package com.qa.flipkart.tests_smoke;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
