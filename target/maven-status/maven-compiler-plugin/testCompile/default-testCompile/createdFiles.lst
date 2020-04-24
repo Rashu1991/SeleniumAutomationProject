@@ -1,5 +1,6 @@
-com\qa\flipkart\tests\MyProfilePageTest.class
-com\qa\flipkart\tests\GroceryPageTest.class
-com\qa\flipkart\tests\LoginPageTest.class
-com\qa\flipkart\tests\HomePageTest.class
-com\qa\flipkart\tests\OffersPageTest.class
+com\qa\flipkart\tests_smoke\OffersPageTest.class
+com\qa\flipkart\tests_smoke\LoginPageTest.class
+com\qa\flipkart\tests_smoke\GroceryPageTest.class
+com\qa\flipkart\tests_regression\LoginPageTest.class
+com\qa\flipkart\tests_smoke\MyProfilePageTest.class
+com\qa\flipkart\tests_smoke\HomePageTest.class

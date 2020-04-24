@@ -28,12 +28,13 @@ public class LoginPageTest extends TestBase {
 	}
 	
 	@Test
-	public void loginValid(String uName,String pass) {
+	public void loginValidTest() {
 		loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+		
 	}
 	
 	@Test
-	public void loginForgotPassloginForgotPassChangeEmailTest() {
+	public void loginForgotPassChangeEmailTest() {
 		boolean isClicked=loginPage.loginForgotPassChangeEmail(prop.getProperty("username"));
 		Assert.assertTrue(isClicked,"Not clicked on the Forgot and or Change Email links");
 		

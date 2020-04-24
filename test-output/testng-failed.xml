@@ -5,9 +5,9 @@
     <classes>
       <class name="com.qa.flipkart.tests_regression.LoginPageTest">
         <methods>
+          <include name="loginValid"/>
           <include name="tearDownAll"/>
           <include name="setUp"/>
-          <include name="loginInValidUsernameAndInvalidPassTest"/>
         </methods>
       </class> <!-- com.qa.flipkart.tests_regression.LoginPageTest -->
     </classes>

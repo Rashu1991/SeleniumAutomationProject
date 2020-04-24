@@ -51,8 +51,6 @@ public class LoginPage extends TestBase{
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.elementToBeClickable(changeLnk));
 		changeLnk.click();
-		wait.until(ExpectedConditions.elementToBeClickable(resendLnk));
-		resendLnk.click();
 		return true;
 		}
 		return false;

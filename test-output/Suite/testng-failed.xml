@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <parameter name="Browser1" value="chrome"/>
   <listeners>
     <listener class-name="com.qa.flipkart.extentreportlistener.ExtentReportListener"/>
     <listener class-name="com.qa.flipkart.retry.MyTransformer"/>
@@ -13,7 +12,6 @@
           <include name="loginValid"/>
           <include name="tearDownAll"/>
           <include name="setUp"/>
-          <include name="loginForgotPass"/>
         </methods>
       </class> <!-- com.qa.flipkart.tests_regression.LoginPageTest -->
     </classes>

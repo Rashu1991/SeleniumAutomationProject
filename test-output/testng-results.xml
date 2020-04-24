@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14755" started-at="2020-04-23T11:05:13Z" finished-at="2020-04-23T11:05:27Z">
+  <suite name="Default suite" duration-ms="15208" started-at="2020-04-24T10:43:44Z" finished-at="2020-04-24T10:44:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14755" started-at="2020-04-23T11:05:13Z" finished-at="2020-04-23T11:05:27Z">
+    <test name="Default test" duration-ms="15208" started-at="2020-04-24T10:43:44Z" finished-at="2020-04-24T10:44:00Z">
       <class name="com.qa.flipkart.tests_regression.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@cb644e]" name="setUp" is-config="true" duration-ms="11642" started-at="2020-04-23T11:05:13Z" finished-at="2020-04-23T11:05:24Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@cb644e]" name="setUp" is-config="true" duration-ms="12179" started-at="2020-04-24T10:43:45Z" finished-at="2020-04-24T10:43:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginValidUsernameAndInvalidPassTest()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@cb644e]" name="loginValidUsernameAndInvalidPassTest" duration-ms="1878" started-at="2020-04-23T11:05:24Z" finished-at="2020-04-23T11:05:26Z">
+        <test-method status="PASS" signature="loginValidTest()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@cb644e]" name="loginValidTest" duration-ms="1479" started-at="2020-04-24T10:43:57Z" finished-at="2020-04-24T10:43:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginValidUsernameAndInvalidPassTest -->
-        <test-method status="PASS" signature="tearDownAll()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@cb644e]" name="tearDownAll" is-config="true" duration-ms="1165" started-at="2020-04-23T11:05:26Z" finished-at="2020-04-23T11:05:27Z">
+        </test-method> <!-- loginValidTest -->
+        <test-method status="PASS" signature="tearDownAll()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@cb644e]" name="tearDownAll" is-config="true" duration-ms="1463" started-at="2020-04-24T10:43:58Z" finished-at="2020-04-24T10:44:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownAll -->
