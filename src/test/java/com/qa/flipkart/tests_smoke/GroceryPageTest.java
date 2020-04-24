@@ -32,13 +32,13 @@ public class GroceryPageTest extends TestBase {
 			homePage = new HomePage();
 			homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 			TestUtil.waitForPageLoad(driver);
-			homePage.verifyGroferSubMenu();
+			
 	}
 	
 	@Test
-	public void verifyTitle() {
+	public void verifyGroceryPageTitle() {
 		 
-		 
+		homePage.verifyGroferSubMenu();
 		 driver.navigate().to(Constants.GROCERY_PAGE_URL);
 		 System.out.println(driver.getTitle());
 		 Assert.assertEquals(driver.getTitle(), Constants.GROCERY_PAGE_TITLE,"Grocery Page Title not verified");

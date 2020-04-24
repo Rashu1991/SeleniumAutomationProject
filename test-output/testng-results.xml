@@ -1,25 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15208" started-at="2020-04-24T10:43:44Z" finished-at="2020-04-24T10:44:00Z">
+  <suite name="Suite" duration-ms="19418" started-at="2020-04-24T11:30:11Z" finished-at="2020-04-24T11:30:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15208" started-at="2020-04-24T10:43:44Z" finished-at="2020-04-24T10:44:00Z">
-      <class name="com.qa.flipkart.tests_regression.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@cb644e]" name="setUp" is-config="true" duration-ms="12179" started-at="2020-04-24T10:43:45Z" finished-at="2020-04-24T10:43:57Z">
+    <test name="Smoke Tests" duration-ms="19418" started-at="2020-04-24T11:30:11Z" finished-at="2020-04-24T11:30:30Z">
+      <class name="com.qa.flipkart.tests_smoke.GroceryPageTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.flipkart.tests_smoke.GroceryPageTest@6e06451e]" name="setUp" is-config="true" duration-ms="13361" started-at="2020-04-24T11:30:11Z" finished-at="2020-04-24T11:30:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginValidTest()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@cb644e]" name="loginValidTest" duration-ms="1479" started-at="2020-04-24T10:43:57Z" finished-at="2020-04-24T10:43:58Z">
+        <test-method status="PASS" signature="verifyTitle()[pri:0, instance:com.qa.flipkart.tests_smoke.GroceryPageTest@6e06451e]" name="verifyTitle" duration-ms="5455" started-at="2020-04-24T11:30:24Z" finished-at="2020-04-24T11:30:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginValidTest -->
-        <test-method status="PASS" signature="tearDownAll()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@cb644e]" name="tearDownAll" is-config="true" duration-ms="1463" started-at="2020-04-24T10:43:58Z" finished-at="2020-04-24T10:44:00Z">
+        </test-method> <!-- verifyTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.flipkart.tests_smoke.GroceryPageTest@6e06451e]" name="tearDown" is-config="true" duration-ms="537" started-at="2020-04-24T11:30:30Z" finished-at="2020-04-24T11:30:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownAll -->
-      </class> <!-- com.qa.flipkart.tests_regression.LoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.flipkart.tests_smoke.GroceryPageTest -->
+    </test> <!-- Smoke Tests -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -126,15 +126,6 @@ public class HomePageTest extends TestBase {
 		 return new OffersPage();
 	 }
 	
-	 @Test
-	 public void selectItem() {
-		 homePage.doSearchBar("mobile");
-		 
-	 }
-	 
-	 
-	 
-	 
 	 @AfterMethod
 	public void tearDown() {
 		
