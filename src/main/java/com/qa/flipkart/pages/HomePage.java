@@ -16,6 +16,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.qa.flipkart.testbase.TestBase;
+import com.qa.flipkart.testiutil.TestUtil;
 
 import constantsUtil.Constants;
 
@@ -138,8 +139,7 @@ public class HomePage extends TestBase {
 	}
 	
 	public MyProfilePage clickOnMyAccounts_MyProfile() {
-		Actions action = new Actions(driver);
-		action.moveToElement(myProfileLnk).build().perform();
+		TestUtil.moveToElement(driver, myProfileLnk);
 		myProfileLnk.click();
 		return new MyProfilePage();	
 	}

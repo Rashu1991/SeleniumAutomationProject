@@ -23,10 +23,9 @@ public class GroceryPageTest extends TestBase {
 		super();
 	}
 
-	@Parameters("Browser1")
 	@BeforeMethod
-	public void setUp(String browser) {
-			TestBase.initialize(browser);
+	public void setUp() {
+			TestBase.initialize("chrome");
 			TestBase.launchUrl();
 			loginPage= new LoginPage();
 			homePage = new HomePage();

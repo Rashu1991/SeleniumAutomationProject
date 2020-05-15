@@ -21,16 +21,6 @@ import constantsUtil.Constants;
 
 public class HomePageTest extends TestBase {
 	
-	//What is log? : capturing info/activities at the time of program execution. 
-		// types of logs:
-			//1. info
-			//2. warn
-			//3. debug
-			//4. fatal
-			
-		//how to generate the logs? : use Apache log4j API (log4j jar)
-		//How it works? : it reads log 4j configuration from log4j.properties file
-		//where to create: create inside resources folder
 
 	HomePage homePage;
 	LoginPage loginPage;
@@ -43,10 +33,10 @@ public class HomePageTest extends TestBase {
 		super();
 	}
 
-	@Parameters("Browser1")
+	
 	@BeforeMethod
-	public void setUp(String browser) {
-		TestBase.initialize(browser);
+	public void setUp() {
+		TestBase.initialize("chrome");
 		TestBase.launchUrl();
 		homePage = new HomePage();
 		loginPage = new LoginPage();
@@ -114,17 +104,7 @@ public class HomePageTest extends TestBase {
 			homePage.verifySubMenuBarList();
 	 }
 
-	 @Test
-	 public GroceryPage goToGroceryPageTest() {
-		 homePage.verifyGroferSubMenu();
-		 return new GroceryPage();
-	 }
-	 
-	 @Test
-	 public OffersPage goToOffersPageTest() {
-		 homePage.verifyOfferZoneSubMenu();
-		 return new OffersPage();
-	 }
+	
 	
 	 @AfterMethod
 	public void tearDown() {

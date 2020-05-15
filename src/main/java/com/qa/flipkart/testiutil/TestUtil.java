@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Date;
+import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.function.Function;
 
@@ -19,7 +20,9 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import com.qa.flipkart.testbase.TestBase;
 
@@ -28,6 +31,8 @@ public class TestUtil extends TestBase {
 	public static FileInputStream fis;
 	public static Workbook book;public static Sheet sheet;
 	public static String testSheetPath="C:\\Users\\Mudit\\eclipse-workspace\\POMAutomationPractice\\src\\main\\java\\com\\qa\\flipkart\\testdata\\testData.xlsx";
+	public static Actions action;
+	public Select sel;
 	public static void waitForPageLoad(WebDriver driver) {
 
 		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
@@ -55,17 +60,16 @@ public class TestUtil extends TestBase {
 	}
 	
 	
-	public static void getScreenshotOfEntirePage() {
+	public static String getScreenshotOfEntirePage() throws IOException  {
 		File srcFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		String currentDirectory =System.getProperty("user.dir");
-		try {
-			FileUtils.copyFile(srcFile, new File(currentDirectory+"/screenshotsPage/"+System.currentTimeMillis()+".png"));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}	
-		
+	
+			String destination = "currentDirectory+\"/screenshotsPage/\"+System.currentTimeMillis()+\".png\"";
+			FileUtils.copyFile(srcFile, new File(destination));
+			return destination;
 	}
+	
+
 	
 	public static void getScreenshotOfElement(WebElement ele) {
 		File srcFile=ele.getScreenshotAs(OutputType.FILE);
@@ -78,6 +82,8 @@ public class TestUtil extends TestBase {
 		}
 		
 	}
+	
+	
 	
 	public static Object[][] getData(String sheetName) throws EncryptedDocumentException, IOException{
 		
@@ -94,6 +100,43 @@ public class TestUtil extends TestBase {
 		
 		return data;
 		
+	}
+	
+	
+	public static void moveToElement(WebDriver driver,WebElement ele) {
+		action = new Actions(driver);
+		action.moveToElement(ele).build().perform();
+		
+	}
+	
+	// select by text from drop down
+	public void selectFromDropDownByText(WebElement selElement,String text) {
+		sel = new Select(selElement);
+		sel.selectByVisibleText(text);
+	}
+	
+	// select by value from drop down
+	public void selectFromDropDownByValue(WebElement selElement,String value) {
+		sel = new Select(selElement);
+		sel.selectByValue(value);
+	}
+	
+	// select by index from drop down
+	public void selectFromDropDownByIndex(WebElement selElement,int index) {
+		sel = new Select(selElement);
+		sel.selectByIndex(index);
+	}
+	
+	// Attach screenshot of failed test cases in extent report
+	
+	public static String getScreenshot(WebDriver driver,String screenshotName) throws IOException {
+		
+		File srcFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		String destination = System.getProperty("user.dir")+"/FailedTestCasesScreenshot/"+screenshotName+System.currentTimeMillis()+".png";
+		
+		File finalDestination = new File(destination);
+		FileUtils.copyFile(srcFile, finalDestination);
+		return destination;
 	}
 	
 	}

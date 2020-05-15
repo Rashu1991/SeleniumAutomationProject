@@ -1,27 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <parameter name="Browser1" value="chrome"/>
-  <listeners>
-    <listener class-name="com.qa.flipkart.extentreportlistener.ExtentReportListener"/>
-    <listener class-name="com.qa.flipkart.retry.MyTransformer"/>
-  </listeners>
-  <test thread-count="5" name="Smoke Tests(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.flipkart.tests_smoke.GroceryPageTest">
+      <class name="com.qa.flipkart.tests_smoke.LoginPageTest">
         <methods>
-          <include name="verifyTitle"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="login"/>
+          <include name="endReport"/>
+          <include name="setExtent"/>
+          <include name="tearDownAll"/>
+          <include name="init"/>
         </methods>
-      </class> <!-- com.qa.flipkart.tests_smoke.GroceryPageTest -->
-      <class name="com.qa.flipkart.tests_smoke.OffersPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="verifyOffersPageTitle"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.qa.flipkart.tests_smoke.OffersPageTest -->
+      </class> <!-- com.qa.flipkart.tests_smoke.LoginPageTest -->
     </classes>
-  </test> <!-- Smoke Tests(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

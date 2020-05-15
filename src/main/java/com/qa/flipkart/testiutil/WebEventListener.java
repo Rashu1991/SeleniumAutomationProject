@@ -1,5 +1,7 @@
 package com.qa.flipkart.testiutil;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
@@ -51,8 +53,12 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	}
 
 	public void onException(Throwable error, WebDriver driver) {
-		System.out.println("Exception occured: " + error);
-			TestUtil.getScreenshotOfEntirePage();
+		
+		/*
+		 * System.out.println("Exception occured: " + error); try {
+		 * TestUtil.getScreenshotOfEntirePage(); } catch (IOException e) { // TODO
+		 * Auto-generated catch block e.printStackTrace(); }
+		 */
 	}
 
 	public void beforeFindBy(By by, WebElement element, WebDriver driver) {
