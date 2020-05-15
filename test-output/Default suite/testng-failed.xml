@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.flipkart.tests_smoke.OffersPageTest">
+      <class name="com.qa.flipkart.tests_smoke.MyProfilePageTest">
         <methods>
-          <include name="endReport"/>
+          <include name="verifyPersonalInfoclickOnEdit"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="setExtent"/>
-          <include name="tearDownAll"/>
-          <include name="verifyOffersPageTitle"/>
+          <include name="verifyMyProfilePageTitleTest"/>
+          <include name="verifyClickOnEditEmailAddLnk"/>
         </methods>
-      </class> <!-- com.qa.flipkart.tests_smoke.OffersPageTest -->
+      </class> <!-- com.qa.flipkart.tests_smoke.MyProfilePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
