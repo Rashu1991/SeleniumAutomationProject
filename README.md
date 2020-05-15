@@ -11,26 +11,8 @@ It is a Maven project so basically the skeleton is like:
  Created on separate souce folder
       src/main/resources
  To store the testNg.xml files, In the project we have two xml files one for smoke cases and other one for regression cases.
- pom.xml is there which is the heart of Maven and where all the dependency will exists. The template of pom.xml comprises of:-
- <project>
-    <groupId></groupId>>
-    <artifactId></artifactId>
-    <version></version>
-    <build>
-        <plugins>
-          <plugin>
-            <pluginManagement>
-              <suiteXmlFiles>
-                <suiteXmlFile>
-                  here we can mention the testng.xml files 
-                  </suiteXmlFile>
-                </suiteXmlFiles>
-              </pluginManagement>
-          </plugin>
-        </plugins>
-    </build>
- </project>
- 
+ pom.xml is there which is the heart of Maven and where all the dependency will exists.
+  
  src/main/java comprises:
   1. Config file - It will have the username, password, url and browser on which to run the application
   2. Page classes - It has all the .java classes for each and every page of the application like LoginPage.java, HomePage.java etc
