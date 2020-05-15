@@ -10,23 +10,42 @@
       <class name="com.qa.flipkart.tests_smoke.HomePageTest">
         <methods>
           <include name="setUp"/>
+          <include name="clickOnSearchBar"/>
           <include name="tearDown"/>
+          <include name="verifyHomePageTitle"/>
+          <include name="verifyAppUrl"/>
           <include name="verifySubMenuBarListTest"/>
+          <include name="doLogout"/>
           <include name="getMenuBarList"/>
+          <include name="tearDownAll"/>
         </methods>
       </class> <!-- com.qa.flipkart.tests_smoke.HomePageTest -->
+      <class name="com.qa.flipkart.tests_smoke.GroceryPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyGroceryPageTitle"/>
+          <include name="tearDownAll"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.flipkart.tests_smoke.GroceryPageTest -->
       <class name="com.qa.flipkart.tests_smoke.MyProfilePageTest">
         <methods>
           <include name="verifyPersonalInfoclickOnEdit"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="addAddressTest"/>
           <include name="verifyMyProfilePageTitleTest"/>
+          <include name="enterFirstNameTest"/>
+          <include name="enterLastNameTest"/>
+          <include name="tearDownAll"/>
+          <include name="clickOnManageAddressesLinkTest"/>
           <include name="verifyClickOnEditEmailAddLnk"/>
         </methods>
       </class> <!-- com.qa.flipkart.tests_smoke.MyProfilePageTest -->
       <class name="com.qa.flipkart.tests_smoke.OffersPageTest">
         <methods>
           <include name="setUp"/>
+          <include name="tearDownAll"/>
           <include name="verifyOffersPageTitle"/>
           <include name="tearDown"/>
         </methods>
