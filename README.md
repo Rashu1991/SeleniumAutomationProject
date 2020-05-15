@@ -1,6 +1,6 @@
 # POMAutoSelPractice
 
-This is a Hybrid Framework based on Data driven approach using Page Object Model Design Pattern TestNG Framework for assertion and writing test cases.
+This is a Hybrid Framework based on Data driven approach using Page Object Model Design Pattern  and TestNG Framework for assertion and writing test cases.
 It is a Maven project so basically the skeleton is like:
       src/main/java
         package/packages..
@@ -32,14 +32,14 @@ It is a Maven project so basically the skeleton is like:
  </project>
  
  src/main/java comprises:
-  1. config file - It will have the username, password, url and browser on which to run the application
+  1. Config file - It will have the username, password, url and browser on which to run the application
   2. Page classes - It has all the .java classes for each and every page of the application like LoginPage.java, HomePage.java etc
   3. TestBase class - consists of reusable code like loading the properties file, launching the browser, implicitWait, pageLoadTime,          maximize the window,delete all cookies, close and quit the browser windows.
   4. Retry Mechanism - It consists of two classes 
                         a) MyTransformer - to run the retry class (it is based on reflection Api)
                         b) RetryAnalyzer - the class which have the code to re run the fail test cases and also the number of times to                                              re-run.
   5. Util - util methods for Waits,Select Class, Screenshot . iterating rows of the excel file
-  6. testData Excel file - it uses Apache POI libarary
+  6. TestData Excel file - it uses Apache POI libarary
   7. Constants - different constants of the application under test
   8. ExtentReportListener
   
