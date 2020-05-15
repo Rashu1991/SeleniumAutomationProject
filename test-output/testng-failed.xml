@@ -1,17 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.qa.flipkart.extentreportlistener.ExtentReportListener"/>
+    <listener class-name="com.qa.flipkart.retry.MyTransformer"/>
+  </listeners>
+  <test thread-count="5" name="Smoke Tests(failed)">
     <classes>
-      <class name="com.qa.flipkart.tests_smoke.LoginPageTest">
+      <class name="com.qa.flipkart.tests_smoke.HomePageTest">
         <methods>
-          <include name="login"/>
-          <include name="endReport"/>
-          <include name="setExtent"/>
-          <include name="tearDownAll"/>
-          <include name="init"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifySubMenuBarListTest"/>
+          <include name="getMenuBarList"/>
         </methods>
-      </class> <!-- com.qa.flipkart.tests_smoke.LoginPageTest -->
+      </class> <!-- com.qa.flipkart.tests_smoke.HomePageTest -->
+      <class name="com.qa.flipkart.tests_smoke.MyProfilePageTest">
+        <methods>
+          <include name="verifyPersonalInfoclickOnEdit"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyMyProfilePageTitleTest"/>
+          <include name="verifyClickOnEditEmailAddLnk"/>
+        </methods>
+      </class> <!-- com.qa.flipkart.tests_smoke.MyProfilePageTest -->
+      <class name="com.qa.flipkart.tests_smoke.OffersPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyOffersPageTitle"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.flipkart.tests_smoke.OffersPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Smoke Tests(failed) -->
+</suite> <!-- Failed suite [Suite] -->

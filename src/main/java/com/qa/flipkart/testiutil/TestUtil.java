@@ -127,16 +127,4 @@ public class TestUtil extends TestBase {
 		sel.selectByIndex(index);
 	}
 	
-	// Attach screenshot of failed test cases in extent report
-	
-	public static String getScreenshot(WebDriver driver,String screenshotName) throws IOException {
-		
-		File srcFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		String destination = System.getProperty("user.dir")+"/FailedTestCasesScreenshot/"+screenshotName+System.currentTimeMillis()+".png";
-		
-		File finalDestination = new File(destination);
-		FileUtils.copyFile(srcFile, finalDestination);
-		return destination;
-	}
-	
 	}

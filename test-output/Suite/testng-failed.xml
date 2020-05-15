@@ -10,8 +10,9 @@
       <class name="com.qa.flipkart.tests_smoke.HomePageTest">
         <methods>
           <include name="setUp"/>
-          <include name="clickOnSearchBar"/>
           <include name="tearDown"/>
+          <include name="verifySubMenuBarListTest"/>
+          <include name="getMenuBarList"/>
         </methods>
       </class> <!-- com.qa.flipkart.tests_smoke.HomePageTest -->
       <class name="com.qa.flipkart.tests_smoke.MyProfilePageTest">
@@ -19,8 +20,17 @@
           <include name="verifyPersonalInfoclickOnEdit"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="verifyMyProfilePageTitleTest"/>
+          <include name="verifyClickOnEditEmailAddLnk"/>
         </methods>
       </class> <!-- com.qa.flipkart.tests_smoke.MyProfilePageTest -->
+      <class name="com.qa.flipkart.tests_smoke.OffersPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyOffersPageTitle"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.flipkart.tests_smoke.OffersPageTest -->
     </classes>
   </test> <!-- Smoke Tests(failed) -->
 </suite> <!-- Failed suite [Suite] -->

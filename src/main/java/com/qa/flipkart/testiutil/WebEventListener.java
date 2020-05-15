@@ -53,12 +53,16 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	}
 
 	public void onException(Throwable error, WebDriver driver) {
+
 		
-		/*
-		 * System.out.println("Exception occured: " + error); try {
-		 * TestUtil.getScreenshotOfEntirePage(); } catch (IOException e) { // TODO
-		 * Auto-generated catch block e.printStackTrace(); }
-		 */
+		 System.out.println("Exception occured: " + error);
+		 try {
+		 TestUtil.getScreenshotOfEntirePage();
+		 }
+		 catch (IOException e) {
+			 e.printStackTrace(); 
+		 }
+		 
 	}
 
 	public void beforeFindBy(By by, WebElement element, WebDriver driver) {
@@ -120,27 +124,27 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 
 	public <X> void afterGetScreenshotAs(OutputType<X> arg0, X arg1) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void afterGetText(WebElement arg0, WebDriver arg1, String arg2) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void afterSwitchToWindow(String arg0, WebDriver arg1) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public <X> void beforeGetScreenshotAs(OutputType<X> arg0) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void beforeGetText(WebElement arg0, WebDriver arg1) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void beforeSwitchToWindow(String arg0, WebDriver arg1) {

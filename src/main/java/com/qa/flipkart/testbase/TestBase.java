@@ -38,7 +38,7 @@ public class TestBase {
 	public TestBase() {
 		prop = new Properties();
 		try {
-			//fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/qa/flipkart/config/config.properties");
+			fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/qa/flipkart/config/config.properties");
 			//fis = new FileInputStream("C:\\Users\\Mudit\\eclipse-workspace\\POMAutomationPractice\\src\\main\\java\\com\\qa\\flipkart\\config\\config.properties");
 			prop.load(fis);
 		} catch (FileNotFoundException e) {
@@ -51,22 +51,10 @@ public class TestBase {
 
 	}
 	
-	@BeforeTest
-	public void setExtent() {
-		extent = new ExtentReports(System.getProperty("user.dir")+"/test-ouputExtent/Extent.html",true);
-		extent.addSystemInfo("Host Name", "Shobhit Windows 10");
-		extent.addSystemInfo("User Name","Shobhit Varshney");
-		extent.addSystemInfo("Enviornment","QA");
-		System.out.println("Executed");
-	}
+
 	
 	
-	@AfterTest
-	public void endReport() {
-		
-		extent.flush(); // flush the contents of the extent report
-		extent.close(); // close the connection with extent report
-	}
+
 
 	public static void initialize(String browserName) {
 
@@ -108,34 +96,5 @@ public class TestBase {
 		System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
 		driver.get(prop.getProperty("url"));
 	}
-	
-	@AfterMethod
-	public void tearDownAll(ITestResult result) throws IOException {
 		
-		
-		if(result.getStatus() == ITestResult.FAILURE) {
-			// this is important without this we will get NullPOinterException
-			// this method will return one ExtentTest object which will help in generating logs
-			extentTest = extent.startTest("Tests", "Regrssion&SmokeTests");
-			
-			
-			extentTest.log(LogStatus.FAIL, "TEST CASE FAILED IS "+result.getName()); // to add name in extent report
-			extentTest.log(LogStatus.FAIL, "TEST CASE FAILED IS "+result.getThrowable()); // to add exception
-			
-			String screenshotPath=TestUtil.getScreenshot(driver, result.getName());
-			extentTest.log(LogStatus.FAIL,extentTest.addScreencast(screenshotPath)); // to add screenshot in extent report
-		}
-		
-		else if(result.getStatus() == ITestResult.SKIP) {
-			extentTest.log(LogStatus.SKIP, "TEST CASE SKIPPED IS "+result.getName());
-		}
-		else if(result.getStatus() == ITestResult.SUCCESS) {
-			extentTest.log(LogStatus.PASS, "TEST CASE PASSED IS "+result.getName());
-		}
-		
-		extent.endTest(extentTest); // ending test
-		driver.quit();
-		
-		
-	}	
 }
