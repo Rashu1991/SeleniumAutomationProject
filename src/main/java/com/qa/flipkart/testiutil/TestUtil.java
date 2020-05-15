@@ -21,9 +21,13 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import com.qa.flipkart.testbase.TestBase;
 
 public class TestUtil extends TestBase {
@@ -127,4 +131,9 @@ public class TestUtil extends TestBase {
 		sel.selectByIndex(index);
 	}
 	
+	// Explicit wait to visibilityOf Element
+	public static void waitTillVisibilityOfElement(WebElement element) {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOf(element));
+	}
 	}

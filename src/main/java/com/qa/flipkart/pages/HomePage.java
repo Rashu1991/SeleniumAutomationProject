@@ -57,6 +57,7 @@ public class HomePage extends TestBase {
 	// Page Actions
 
 	public void doSearchBar(String text) {
+		//TestUtil.waitTillVisibilityOfElement(srchBar);
 		srchBar.sendKeys(text);
 		srchBtn.click();
 	}

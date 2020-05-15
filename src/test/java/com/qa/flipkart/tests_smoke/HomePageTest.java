@@ -57,10 +57,13 @@ public class HomePageTest extends TestBase {
 
 	@Test
 	public void clickOnSearchBar() {
-		//Thread.sleep(3000);
-		driver.navigate().refresh();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		TestUtil.waitForPageLoad(driver);
-		
 		homePage.doSearchBar("");
 	}
 
