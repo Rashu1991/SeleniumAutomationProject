@@ -2,92 +2,92 @@
 <testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="88338" started-at="2020-05-15T08:55:15Z" finished-at="2020-05-15T08:56:44Z">
+  <suite name="Suite" duration-ms="88253" started-at="2020-05-15T09:29:31Z" finished-at="2020-05-15T09:30:59Z">
     <groups>
     </groups>
-    <test name="Regression Tests" duration-ms="88338" started-at="2020-05-15T08:55:15Z" finished-at="2020-05-15T08:56:44Z">
+    <test name="Regression Tests" duration-ms="88253" started-at="2020-05-15T09:29:31Z" finished-at="2020-05-15T09:30:59Z">
       <class name="com.qa.flipkart.tests_regression.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="setUp" is-config="true" duration-ms="13482" started-at="2020-05-15T08:55:15Z" finished-at="2020-05-15T08:55:29Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="setUp" is-config="true" duration-ms="11988" started-at="2020-05-15T09:29:31Z" finished-at="2020-05-15T09:29:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="LoginValidUsernameBlankPassTest()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="LoginValidUsernameBlankPassTest" duration-ms="1202" started-at="2020-05-15T08:55:29Z" finished-at="2020-05-15T08:55:30Z">
+        <test-method status="PASS" signature="LoginValidUsernameBlankPassTest()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="LoginValidUsernameBlankPassTest" duration-ms="1190" started-at="2020-05-15T09:29:43Z" finished-at="2020-05-15T09:29:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginValidUsernameBlankPassTest -->
-        <test-method status="PASS" signature="tearDownAll()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="tearDownAll" is-config="true" duration-ms="953" started-at="2020-05-15T08:55:30Z" finished-at="2020-05-15T08:55:31Z">
+        <test-method status="PASS" signature="tearDownAll()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="tearDownAll" is-config="true" duration-ms="1063" started-at="2020-05-15T09:29:44Z" finished-at="2020-05-15T09:29:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownAll -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="setUp" is-config="true" duration-ms="9269" started-at="2020-05-15T08:55:31Z" finished-at="2020-05-15T08:55:40Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="setUp" is-config="true" duration-ms="9745" started-at="2020-05-15T09:29:45Z" finished-at="2020-05-15T09:29:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginForgotPassChangeEmailTest()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="loginForgotPassChangeEmailTest" duration-ms="1651" started-at="2020-05-15T08:55:40Z" finished-at="2020-05-15T08:55:42Z">
+        <test-method status="PASS" signature="loginForgotPassChangeEmailTest()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="loginForgotPassChangeEmailTest" duration-ms="2062" started-at="2020-05-15T09:29:55Z" finished-at="2020-05-15T09:29:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginForgotPassChangeEmailTest -->
-        <test-method status="PASS" signature="tearDownAll()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="tearDownAll" is-config="true" duration-ms="946" started-at="2020-05-15T08:55:42Z" finished-at="2020-05-15T08:55:43Z">
+        <test-method status="PASS" signature="tearDownAll()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="tearDownAll" is-config="true" duration-ms="1051" started-at="2020-05-15T09:29:57Z" finished-at="2020-05-15T09:29:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownAll -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="setUp" is-config="true" duration-ms="9734" started-at="2020-05-15T08:55:43Z" finished-at="2020-05-15T08:55:53Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="setUp" is-config="true" duration-ms="9704" started-at="2020-05-15T09:29:58Z" finished-at="2020-05-15T09:30:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginForgotPassResendOTPTest()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="loginForgotPassResendOTPTest" duration-ms="1667" started-at="2020-05-15T08:55:53Z" finished-at="2020-05-15T08:55:54Z">
+        <test-method status="PASS" signature="loginForgotPassResendOTPTest()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="loginForgotPassResendOTPTest" duration-ms="1862" started-at="2020-05-15T09:30:08Z" finished-at="2020-05-15T09:30:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginForgotPassResendOTPTest -->
-        <test-method status="PASS" signature="tearDownAll()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="tearDownAll" is-config="true" duration-ms="954" started-at="2020-05-15T08:55:54Z" finished-at="2020-05-15T08:55:55Z">
+        <test-method status="PASS" signature="tearDownAll()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="tearDownAll" is-config="true" duration-ms="971" started-at="2020-05-15T09:30:10Z" finished-at="2020-05-15T09:30:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownAll -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="setUp" is-config="true" duration-ms="9504" started-at="2020-05-15T08:55:55Z" finished-at="2020-05-15T08:56:05Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="setUp" is-config="true" duration-ms="9261" started-at="2020-05-15T09:30:11Z" finished-at="2020-05-15T09:30:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginInValidPassTest()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="loginInValidPassTest" duration-ms="678" started-at="2020-05-15T08:56:05Z" finished-at="2020-05-15T08:56:06Z">
+        <test-method status="PASS" signature="loginInValidPassTest()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="loginInValidPassTest" duration-ms="609" started-at="2020-05-15T09:30:20Z" finished-at="2020-05-15T09:30:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginInValidPassTest -->
-        <test-method status="PASS" signature="tearDownAll()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="tearDownAll" is-config="true" duration-ms="941" started-at="2020-05-15T08:56:06Z" finished-at="2020-05-15T08:56:06Z">
+        <test-method status="PASS" signature="tearDownAll()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="tearDownAll" is-config="true" duration-ms="1048" started-at="2020-05-15T09:30:20Z" finished-at="2020-05-15T09:30:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownAll -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="setUp" is-config="true" duration-ms="9848" started-at="2020-05-15T08:56:06Z" finished-at="2020-05-15T08:56:16Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="setUp" is-config="true" duration-ms="9839" started-at="2020-05-15T09:30:22Z" finished-at="2020-05-15T09:30:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginInValidUsernameTest()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="loginInValidUsernameTest" duration-ms="824" started-at="2020-05-15T08:56:16Z" finished-at="2020-05-15T08:56:17Z">
+        <test-method status="PASS" signature="loginInValidUsernameTest()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="loginInValidUsernameTest" duration-ms="862" started-at="2020-05-15T09:30:31Z" finished-at="2020-05-15T09:30:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginInValidUsernameTest -->
-        <test-method status="PASS" signature="tearDownAll()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="tearDownAll" is-config="true" duration-ms="1044" started-at="2020-05-15T08:56:17Z" finished-at="2020-05-15T08:56:18Z">
+        <test-method status="PASS" signature="tearDownAll()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="tearDownAll" is-config="true" duration-ms="1668" started-at="2020-05-15T09:30:32Z" finished-at="2020-05-15T09:30:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownAll -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="setUp" is-config="true" duration-ms="9531" started-at="2020-05-15T08:56:18Z" finished-at="2020-05-15T08:56:28Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="setUp" is-config="true" duration-ms="9549" started-at="2020-05-15T09:30:34Z" finished-at="2020-05-15T09:30:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginValidTest()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="loginValidTest" duration-ms="1448" started-at="2020-05-15T08:56:28Z" finished-at="2020-05-15T08:56:29Z">
+        <test-method status="PASS" signature="loginValidTest()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="loginValidTest" duration-ms="1568" started-at="2020-05-15T09:30:43Z" finished-at="2020-05-15T09:30:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginValidTest -->
-        <test-method status="PASS" signature="tearDownAll()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="tearDownAll" is-config="true" duration-ms="1368" started-at="2020-05-15T08:56:29Z" finished-at="2020-05-15T08:56:31Z">
+        <test-method status="PASS" signature="tearDownAll()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="tearDownAll" is-config="true" duration-ms="1509" started-at="2020-05-15T09:30:45Z" finished-at="2020-05-15T09:30:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownAll -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="setUp" is-config="true" duration-ms="10295" started-at="2020-05-15T08:56:31Z" finished-at="2020-05-15T08:56:41Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="setUp" is-config="true" duration-ms="10045" started-at="2020-05-15T09:30:47Z" finished-at="2020-05-15T09:30:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginValidUsernameAndInvalidPassTest()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="loginValidUsernameAndInvalidPassTest" duration-ms="1570" started-at="2020-05-15T08:56:41Z" finished-at="2020-05-15T08:56:42Z">
+        <test-method status="PASS" signature="loginValidUsernameAndInvalidPassTest()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="loginValidUsernameAndInvalidPassTest" duration-ms="1393" started-at="2020-05-15T09:30:57Z" finished-at="2020-05-15T09:30:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginValidUsernameAndInvalidPassTest -->
-        <test-method status="PASS" signature="tearDownAll()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="tearDownAll" is-config="true" duration-ms="1312" started-at="2020-05-15T08:56:42Z" finished-at="2020-05-15T08:56:44Z">
+        <test-method status="PASS" signature="tearDownAll()[pri:0, instance:com.qa.flipkart.tests_regression.LoginPageTest@490ab905]" name="tearDownAll" is-config="true" duration-ms="1172" started-at="2020-05-15T09:30:58Z" finished-at="2020-05-15T09:30:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownAll -->
