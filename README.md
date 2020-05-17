@@ -20,7 +20,7 @@ It is a Maven project so basically the skeleton is like:
   4. Retry Mechanism - It consists of two classes 
                         a) MyTransformer - to run the retry class (it is based on reflection Api)
                         b) RetryAnalyzer - the class which have the code to re run the fail test cases and also the number of times to                                              re-run.
-  5. Util - util methods for Waits,Select Class, Screenshot . iterating rows of the excel file
+  5. Util - util methods for Waits,Select Class, Taking Screenshot . iterating rows of the excel file
   6. TestData Excel file - it uses Apache POI libarary
   7. Constants - different constants of the application under test
   8. ExtentReportListener
