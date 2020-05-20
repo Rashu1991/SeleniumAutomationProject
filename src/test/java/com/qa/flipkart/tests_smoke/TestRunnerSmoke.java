@@ -5,7 +5,7 @@ import org.testng.TestNG;
 import com.qa.flipkart.extentreportlistener.ExtentReportListener;
 import com.qa.flipkart.retry.MyTransformer;
 
-public class TestRunner {
+public class TestRunnerSmoke {
 	
 	public static void main(String []args) {
 		
