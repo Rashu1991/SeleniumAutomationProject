@@ -1,4 +1,4 @@
-# POMAutoSelPractice
+# SeleniumAutomationProject
 
 This is a Hybrid Framework based on Data driven approach using Page Object Model Design Pattern  and TestNG Framework for assertion and writing test cases.
 It is a Maven project so basically the skeleton is like:
